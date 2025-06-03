@@ -2,7 +2,7 @@
 
 - 🧠 I'm System engineering student at FUKL.<br/>
 - 🔭 I'm currently working on K-Forge Organization.<br/>
-- 🌱 I'm currently learning Spring FrameWork.<br/>
+- 🌱 I'm currently learning Spring.<br/>
 - 🤔 I'm looking for help with microservices.<br/>
 
 
