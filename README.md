@@ -2,8 +2,8 @@
 
 - 🧠 I'm system engineering student at FUKL.<br/>
 - 🔭 I'm currently working on K-Forge Organization.<br/>
-- 🌱 I'm currently learning Spring.<br/>
-- 🤔 I'm looking for help with microservices.<br/>
+- 🌱 I'm currently learning Astro and Spring.<br/>
+- 🤔 My next goal is microservices.<br/>
 
 ## 🌐 Socials:
  [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bsvargasc13@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/xd)
