@@ -1,31 +1,57 @@
-## Hi there, I'm Brian 🦌
+<div align="center">
 
-- 🧠 I'm system engineering student at FUKL.<br/>
-- 🔭 I'm currently working on K-Forge Organization.<br/>
-- 🌱 I'm currently learning Astro and Spring.<br/>
-- 🤔 My next goal is microservices.<br/>
+  # Hi there, I'm Brian 🦌
 
-## 🌐 Socials:
- [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:bsvargasc13@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/xd)
+  ### 👨‍💻 System Engineering Student @ FUKL
 
-## 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat-square&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=flat-square&logo=Prisma&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
+  <p align="center">
+    Currently working on <b>K-Forge Organization</b><br>
+    Learning <b>Angular, TypeScript & Spring</b><br>
+    🎯 Goal: <b>Microservices Architecture</b>
+  </p>
 
-## 📊 GitHub Stats:
-![](https://nirzak-streak-stats.vercel.app/?user=13rianVargas&theme=merko&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api?username=13rianVargas&theme=merko&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=13rianVargas&theme=merko&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+  <br/>
 
-## ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
+  <!-- Social Links - Monochrome Style -->
+  <a href="mailto:bsvargasc13@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-161b22?style=for-the-badge&logo=gmail&logoColor=FFD700" />
+  </a>
+  <a href="https://www.linkedin.com/in/13rian-vargas/">
+    <img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=yellow" />
+  </a>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+  <br/><br/>
+
+  <!-- Tech Stack - Clean & Uniform -->
+  <h3>💻 Tech Stack</h3>
+  
+  <img src="https://img.shields.io/badge/Java-black?style=flat-square&logo=openjdk&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Spring-black?style=flat-square&logo=spring&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Postgres-black?style=flat-square&logo=postgresql&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Docker-black?style=flat-square&logo=docker&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Prisma-black?style=flat-square&logo=prisma&logoColor=FFD700" />
+  <br/>
+  <img src="https://img.shields.io/badge/Angular-black?style=flat-square&logo=angular&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/JavaScript-black?style=flat-square&logo=javascript&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/HTML5-black?style=flat-square&logo=html5&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/CSS3-black?style=flat-square&logo=css3&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Git-black?style=flat-square&logo=git&logoColor=FFD700" />
+  <img src="https://img.shields.io/badge/Vercel-black?style=flat-square&logo=vercel&logoColor=FFD700" />
+
+  <br/><br/>
+
+  <!-- Stats - Transparent & Minimal -->
+  <h3>📊 GitHub Stats</h3>
+  
+  <p align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=13rianVargas&show_icons=true&theme=transparent&hide_border=true&title_color=FFD700&text_color=999&icon_color=FFD700" height="150" alt="stats graph" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=13rianVargas&layout=compact&theme=transparent&hide_border=true&title_color=FFD700&text_color=999" height="150" alt="languages graph" />
+  </p>
+
+  <br/><br/>
+
+  <!-- Random Quote -->
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=161b22&quoteColor=FFD700&authorColor=FFD700&symbolColor=FFD700" />
+
+</div>
