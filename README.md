@@ -38,7 +38,7 @@
 
   <div align="center">
   
-  <h3>Frontend</h3>
+  <h2>Frontend</h2>
   <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FFD700" height="40" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=FFD700" height="40" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=FFD700" height="40" alt="JavaScript" />
@@ -46,22 +46,20 @@
   <img src="https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=FFD700" height="40" alt="Astro" />
   <img src="https://img.shields.io/badge/Angular-000000?style=for-the-badge&logo=angular&logoColor=FFD700" height="40" alt="Angular" />
 
-  <h3>Backend</h3>
+  <h2>Backend</h2>
   <img src="https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=FFD700" height="40" alt="Java" />
   <img src="https://img.shields.io/badge/Spring-000000?style=for-the-badge&logo=spring&logoColor=FFD700" height="40" alt="Spring" />
   <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=FFD700" height="40" alt="Node.js" />
-  <img src="https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=postman&logoColor=FFD700" height="40" alt="REST API" />
+  <img src="https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=swagger&logoColor=FFD700" height="40" alt="REST API" />
 
-  <h3>Databases</h3>
+  <h2>Databases</h2>
   <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=FFD700" height="40" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=FFD700" height="40" alt="MySQL" />
   <img src="https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=FFD700" height="40" alt="MongoDB" />
   <img src="https://img.shields.io/badge/MariaDB-000000?style=for-the-badge&logo=mariadb&logoColor=FFD700" height="40" alt="MariaDB" />
   <img src="https://img.shields.io/badge/Oracle-000000?style=for-the-badge&logo=oracle&logoColor=FFD700" height="40" alt="Oracle" />
-  <img src="https://img.shields.io/badge/TiDB-000000?style=for-the-badge&logo=tidb&logoColor=FFD700" height="40" alt="TiDB" />
-  <img src="https://img.shields.io/badge/Neon-000000?style=for-the-badge&logo=neon&logoColor=FFD700" height="40" alt="Neon" />
 
-  <h3>DevOps & Tools</h3>
+  <h2>DevOps & Tools</h2>
   <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=FFD700" height="40" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=FFD700" height="40" alt="GitHub" />
   <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=FFD700" height="40" alt="Docker" />
