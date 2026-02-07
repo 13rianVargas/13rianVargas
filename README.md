@@ -24,15 +24,11 @@
     <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFD700" height="50" alt="LinkedIn" />
   </a>
 
-  <br/>
-
-   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
-  
-  <br/><br/>
-
   <a href="https://13rian-vargas.vercel.app">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=140&section=header&text=VIEW%20PORTFOLIO%20→&fontSize=38&fontColor=FFD700&animation=twinkling&fontAlignY=40" width="50%" alt="Portfolio Button" />
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=80&text=→%20My%20Portfolio%20←&fontSize=35&fontColor=FFD700&animation=twinkling" alt="Portfolio Button" />
   </a>
+
+  <br/>
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
 
   <br/>
