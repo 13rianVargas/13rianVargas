@@ -28,7 +28,7 @@
 
    <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
   
-  <br/>
+  <br/><br/>
 
   <a href="https://13rian-vargas.vercel.app">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=140&section=header&text=VIEW%20PORTFOLIO%20→&fontSize=38&fontColor=FFD700&animation=twinkling&fontAlignY=40" width="50%" alt="Portfolio Button" />
