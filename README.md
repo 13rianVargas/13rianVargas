@@ -20,12 +20,14 @@
   <a href="https://www.linkedin.com/in/13rian-vargas/">
     <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logoColor=FFD700" height="35" alt="LinkedIn" />
   </a>
-  <br/><br/>
+
+  <br/>
+
   <a href="https://13rian-vargas.vercel.app/#technologies">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=readdotcv&logoColor=FFD700" height="35" alt="Portfolio" />
   </a>
 
-  <br/><br/>
+  <br/>
 
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
 
