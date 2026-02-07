@@ -4,13 +4,15 @@
   
   <br/>
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=60&pause=1000&color=FFD700&center=true&vCenter=true&width=1000&lines=Full+Stack+Developer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=57&pause=1000&color=FFD700&center=true&vCenter=true&width=1000&lines=Full+Stack+Developer" alt="Typing SVG" />
 
   <h3>
     Focusing on <span style="color: #FFD700;">Microservices Architecture</span> and <span style="color: #FFD700;">Enterprise Solutions</span>
   </h3>
   <p>Currently developing at <b>K-Forge Organization</b></p>
 
+  <br/>
+  
   <!-- Social Links -->
   <a href="mailto:bsvargasc13@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logoColor=FFD700" height="35" alt="Gmail" />
@@ -18,7 +20,7 @@
   <a href="https://www.linkedin.com/in/13rian-vargas/">
     <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logoColor=FFD700" height="35" alt="LinkedIn" />
   </a>
-  <br/>
+  <br/><br/>
   <a href="https://13rian-vargas.vercel.app/#technologies">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=readdotcv&logoColor=FFD700" height="35" alt="Portfolio" />
   </a>
