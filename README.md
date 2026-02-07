@@ -17,18 +17,17 @@
 
   <!-- Social Links -->
   <a href="mailto:bsvargasc13@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logoColor=FFD700" height="40" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logoColor=FFD700" height="50" alt="Gmail" />
   </a>
   <a href="https://www.linkedin.com/in/13rian-vargas/">
-    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFD700" height="40" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFD700" height="50" alt="LinkedIn" />
   </a>
 
-  <br/><br/><br/>
+  <br/><br/>
 
   <a href="https://13rian-vargas.vercel.app">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=140&section=header&text=VIEW%20PORTFOLIO%20→&fontSize=38&fontColor=FFD700&animation=twinkling&fontAlignY=40" width="100%" alt="Portfolio Button" />
   </a>
-
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
 
   <br/>
