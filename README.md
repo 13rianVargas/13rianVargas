@@ -12,7 +12,7 @@
   <p>Currently developing at <b>K-Forge Organization</b></p>
 
   <br/>
-  
+
   <!-- Social Links -->
   <a href="mailto:bsvargasc13@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logoColor=FFD700" height="35" alt="Gmail" />
@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=readdotcv&logoColor=FFD700" height="35" alt="Portfolio" />
   </a>
 
-  <br/>
+  <br/><br/>
 
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
 
