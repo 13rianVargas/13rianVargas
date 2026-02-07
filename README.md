@@ -26,7 +26,6 @@
   <a href="https://13rian-vargas.vercel.app/#technologies">
     <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=100&section=header&text=PORTFOLIO&fontSize=45&animation=fadeIn&fontColor=FFD700&stroke=FFD700&strokeWidth=2" width="100%" alt="Portfolio Button" />
   </a>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=500&color=FFD700&center=true&vCenter=true&width=300&lines=CLICK+HERE+👆;CLICK+HERE+🖱️" alt="Click Indicator" />
 
   <br/>
 
