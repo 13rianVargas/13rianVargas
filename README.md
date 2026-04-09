@@ -3,29 +3,34 @@
   <!-- Main Header -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=280&section=header&text=13rian%20Vargas&fontSize=80&animation=fadeIn&fontColor=FFD700" width="100%" alt="Header" />
 
-  
   <br/>
 
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&color=FFD700&center=true&vCenter=true&width=1000&lines=Full+Stack+Developer" alt="Typing SVG" />
 
-  <h3>
-    Focusing on <span style="color: #FFD700;">Microservices Architecture</span> and <span style="color: #FFD700;">Enterprise Solutions</span>
-  </h3>
-  <p>Currently developing at <b>K-Forge Organization</b></p>
+  <br/>
+
+  <!-- About -->
+  <h2>About Me</h2>
+
+  <p>
+    Full Stack Developer specializing in Microservices Architecture and Enterprise Solutions.<br/>
+    Founder of <a href="https://kforge-home.vercel.app"><b>K-Forge</b></a> — a software development club at <b>Fundacion Universitaria Konrad Lorenz</b>, Bogota.<br/>
+    Building university platforms, e-commerce systems, and open-source tools with my team.
+  </p>
 
   <br/>
 
   <!-- Social Links -->
   <a href="mailto:bsvargasc13@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logoColor=FFD700" height="50" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Gmail-000000?style=for-the-badge&logo=gmail&logoColor=FFD700" height="44" alt="Gmail" />
   </a>
 
   <a href="https://www.linkedin.com/in/13rian-vargas/">
-    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFD700" height="50" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFD700" height="44" alt="LinkedIn" />
   </a>
 
   <a href="https://13rian-vargas.vercel.app">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=80&text=→%20My%20Portfolio%20←&fontSize=35&fontColor=FFD700&animation=twinkling" alt="Portfolio Button" />
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=FFD700" height="44" alt="Portfolio" />
   </a>
 
   <br/>
@@ -33,12 +38,58 @@
 
   <br/>
 
+  <!-- Active Projects -->
+  <h2>Active Projects</h2>
+
+  <a href="https://github.com/13rianVargas/KApp">
+    <img src="https://img.shields.io/badge/KApp-University%20Platform-000000?style=for-the-badge&logo=spring&logoColor=FFD700" height="40" alt="KApp" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/13rianVargas/TiendaQ">
+    <img src="https://img.shields.io/badge/TiendaQ-E--Commerce-000000?style=for-the-badge&logo=angular&logoColor=FFD700" height="40" alt="TiendaQ" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/13rianVargas/Roastory">
+    <img src="https://img.shields.io/badge/Roastory-Library%20%26%20Cafe-000000?style=for-the-badge&logo=coffeescript&logoColor=FFD700" height="40" alt="Roastory" />
+  </a>
+  &nbsp;
+  <a href="https://kforge-home.vercel.app">
+    <img src="https://img.shields.io/badge/K--Forge-Club%20Website-000000?style=for-the-badge&logo=vercel&logoColor=FFD700" height="40" alt="K-Forge" />
+  </a>
+
+  <br/>
+  <br/>
+
+  <table>
+    <tr>
+      <td><b>KApp</b></td>
+      <td>University platform for Konrad Lorenz — Java 21 + Spring Boot microservices, Angular, PostgreSQL</td>
+    </tr>
+    <tr>
+      <td><b>TiendaQ</b></td>
+      <td>E-commerce system — Java 25 + Spring Boot 4, Angular 21, PostgreSQL</td>
+    </tr>
+    <tr>
+      <td><b>Roastory</b></td>
+      <td>Library-cafe application — Full stack project in active development</td>
+    </tr>
+    <tr>
+      <td><b>K-Forge</b></td>
+      <td>Official club website — Angular 21, Tailwind CSS, deployed on Vercel</td>
+    </tr>
+  </table>
+
+  <br/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
+
+  <br/>
+
   <!-- Tech Stack -->
-  <h1>🛠️ Tech Stack</h1>
+  <h2>Tech Stack</h2>
 
   <div align="center">
   
-  <h2>Frontend</h2>
+  <h3>Frontend</h3>
   <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FFD700" height="40" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=FFD700" height="40" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=FFD700" height="40" alt="JavaScript" />
@@ -46,20 +97,20 @@
   <img src="https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=FFD700" height="40" alt="Astro" />
   <img src="https://img.shields.io/badge/Angular-000000?style=for-the-badge&logo=angular&logoColor=FFD700" height="40" alt="Angular" />
 
-  <h2>Backend</h2>
+  <h3>Backend</h3>
   <img src="https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=FFD700" height="40" alt="Java" />
   <img src="https://img.shields.io/badge/Spring-000000?style=for-the-badge&logo=spring&logoColor=FFD700" height="40" alt="Spring" />
   <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=FFD700" height="40" alt="Node.js" />
   <img src="https://img.shields.io/badge/REST_API-000000?style=for-the-badge&logo=swagger&logoColor=FFD700" height="40" alt="REST API" />
 
-  <h2>Databases</h2>
+  <h3>Databases</h3>
   <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=FFD700" height="40" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=FFD700" height="40" alt="MySQL" />
   <img src="https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=FFD700" height="40" alt="MongoDB" />
   <img src="https://img.shields.io/badge/MariaDB-000000?style=for-the-badge&logo=mariadb&logoColor=FFD700" height="40" alt="MariaDB" />
   <img src="https://img.shields.io/badge/Oracle-000000?style=for-the-badge&logo=oracle&logoColor=FFD700" height="40" alt="Oracle" />
 
-  <h2>DevOps & Tools</h2>
+  <h3>DevOps & Tools</h3>
   <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=FFD700" height="40" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=FFD700" height="40" alt="GitHub" />
   <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=FFD700" height="40" alt="Docker" />
@@ -76,13 +127,12 @@
   </div>
 
   <br/>
-
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=FFD700&height=2" />
+
+  <br/>
 
   <br/>
 
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=0D1117&quoteColor=FFD700&authorColor=FFD700&symbolColor=FFD700" />
 
 </div>
-
-
