@@ -117,7 +117,7 @@
   <img src="https://img.shields.io/badge/Linux_CLI-000000?style=for-the-badge&logo=linux&logoColor=FFD700" height="40" alt="Linux CLI" />
   <img src="https://img.shields.io/badge/Google_Cloud-000000?style=for-the-badge&logo=googlecloud&logoColor=FFD700" height="40" alt="Google Cloud" />
   <img src="https://img.shields.io/badge/Cisco-000000?style=for-the-badge&logo=cisco&logoColor=FFD700" height="40" alt="Cisco" />
-  <img src="https://img.shields.io/badge/npm-000000?style=for-the-badge&logo=npm&logoColor=FFD700" height="40" alt="npm" />
+  <img src="https://img.shields.io/badge/pnpm-000000?style=for-the-badge&logo=pnpm&logoColor=FFD700" height="40" alt="pnpm" />
   <img src="https://img.shields.io/badge/pnpm-000000?style=for-the-badge&logo=pnpm&logoColor=FFD700" height="40" alt="pnpm" />
   <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=FFD700" height="40" alt="Bun" />
   <img src="https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=FFD700" height="40" alt="Postman" />
