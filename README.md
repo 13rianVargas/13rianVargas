@@ -14,7 +14,7 @@
 
   <p>
     Full Stack Developer specializing in Microservices Architecture and Enterprise Solutions.<br/>
-    Founder of <a href="https://kforge-home.vercel.app"><b>K-Forge</b></a> — a software development club at <b>Fundacion Universitaria Konrad Lorenz</b>, Bogota.<br/>
+    Founder of <a href="https://kforge.vercel.app"><b>K-Forge</b></a> — a software development club at <b>Fundacion Universitaria Konrad Lorenz</b>, Bogota.<br/>
     Building university platforms, e-commerce systems, and open-source tools with my team.
   </p>
 
@@ -41,19 +41,19 @@
   <!-- Active Projects -->
   <h2>Active Projects</h2>
 
-  <a href="https://github.com/13rianVargas/KApp">
+  <a href="https://github.com/K-Forge/KApp">
     <img src="https://img.shields.io/badge/KApp-University%20Platform-000000?style=for-the-badge&logo=spring&logoColor=FFD700" height="40" alt="KApp" />
   </a>
   &nbsp;
-  <a href="https://github.com/13rianVargas/TiendaQ">
+  <a href="https://github.com/K-Forge/TiendaQ">
     <img src="https://img.shields.io/badge/TiendaQ-E--Commerce-000000?style=for-the-badge&logo=angular&logoColor=FFD700" height="40" alt="TiendaQ" />
   </a>
   &nbsp;
-  <a href="https://github.com/13rianVargas/Roastory">
+  <a href="https://github.com/K-Forge/Roastory">
     <img src="https://img.shields.io/badge/Roastory-Library%20%26%20Cafe-000000?style=for-the-badge&logo=coffeescript&logoColor=FFD700" height="40" alt="Roastory" />
   </a>
   &nbsp;
-  <a href="https://kforge-home.vercel.app">
+  <a href="https://kforge.vercel.app/">
     <img src="https://img.shields.io/badge/K--Forge-Club%20Website-000000?style=for-the-badge&logo=vercel&logoColor=FFD700" height="40" alt="K-Forge" />
   </a>
 
