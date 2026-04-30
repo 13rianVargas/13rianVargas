@@ -242,7 +242,7 @@
     <img src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1" height="36" alt="MySQL"/>
     <img src="https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=47A248" height="36" alt="MongoDB"/>
     <img src="https://img.shields.io/badge/MariaDB-0D1117?style=for-the-badge&logo=mariadb&logoColor=FFFFFF" height="36" alt="MariaDB"/>
-    <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTYuNSAzaC05QzMuMzYgMyAwIDYuMzYgMCAxMnMzLjM2IDkgNy41IDloOWM0LjE0IDAgNy41LTMuMzYgNy41LTlTMjAuNjQgMyAxNi41IDNtMCAxNWgtOWMtMy4zMSAwLTYtMi42OS02LTZzMi42OS02IDYtNmg5YzMuMzEgMCA2IDIuNjkgNiA2cy0yLjY5IDYtNiA2Ii8+PC9zdmc+&logoColor=F80000" height="36" alt="Oracle"/>
+    <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0Y4MDAwMCIgZD0iTTE2LjUgM2gtOUMzLjM2IDMgMCA2LjM2IDAgMTJzMy4zNiA5IDcuNSA5aDljNC4xNCAwIDcuNS0zLjM2IDcuNS05UzIwLjY0IDMgMTYuNSAzbTAgMTVoLTljLTMuMzEgMC02LTIuNjktNi02czIuNjktNiA2LTZoOWMzLjMxIDAgNiAyLjY5IDYgNnMtMi42OSA2LTYgNiIvPjwvc3ZnPg==" height="36" alt="Oracle"/>
   </p>
 
   <h3>◈ DevOps & Cloud</h3>
