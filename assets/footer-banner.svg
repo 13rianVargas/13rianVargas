@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="footerBg" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#1A1308" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#0D1117" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="footerGlow" cx="50%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="footerSig" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8DC"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+
+    <pattern id="hexFooter" x="0" y="0" width="64" height="56" patternUnits="userSpaceOnUse">
+      <polygon points="32,2 60,17 60,49 32,64 4,49 4,17" fill="none" stroke="#FFD700" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+
+    <filter id="footerSigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="220" fill="url(#footerBg)"/>
+  <rect width="1200" height="220" fill="url(#footerGlow)"/>
+  <rect width="1200" height="220" fill="url(#hexFooter)" opacity="0.7"/>
+
+  <line x1="0" y1="1" x2="1200" y2="1" stroke="#FFD700" stroke-width="1.2" opacity="0.45">
+    <animate attributeName="opacity" values="0.25;0.7;0.25" dur="3.5s" repeatCount="indefinite"/>
+  </line>
+
+  <g stroke="#FFD700" fill="none">
+    <circle cx="600" cy="0" r="60" stroke-width="1.2" stroke-opacity="0.4">
+      <animate attributeName="r" values="60;200" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="0" r="60" stroke-width="1.2" stroke-opacity="0.4">
+      <animate attributeName="r" values="60;200" dur="5s" begin="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0" dur="5s" begin="1.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="#FFD700">
+    <circle cx="160" cy="20" r="1.5" opacity="0">
+      <animate attributeName="cy" values="20;200" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="15" r="1.2" opacity="0">
+      <animate attributeName="cy" values="15;200" dur="11s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="11s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="450" cy="25" r="1.8" opacity="0">
+      <animate attributeName="cy" values="25;200" dur="10s" repeatCount="indefinite" begin="2.5s"/>
+      <animate attributeName="opacity" values="0;0.75;0" dur="10s" repeatCount="indefinite" begin="2.5s"/>
+    </circle>
+    <circle cx="780" cy="20" r="1.5" opacity="0">
+      <animate attributeName="cy" values="20;200" dur="9.5s" repeatCount="indefinite" begin="0.5s"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="9.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="920" cy="15" r="2" opacity="0">
+      <animate attributeName="cy" values="15;200" dur="11.5s" repeatCount="indefinite" begin="2s"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="11.5s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+    <circle cx="1060" cy="25" r="1.3" opacity="0">
+      <animate attributeName="cy" values="25;200" dur="10.5s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="10.5s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <circle cx="100" cy="30" r="1.2" opacity="0">
+      <animate attributeName="cy" values="30;200" dur="12s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="12s" repeatCount="indefinite" begin="3s"/>
+    </circle>
+    <circle cx="1140" cy="20" r="1.6" opacity="0">
+      <animate attributeName="cy" values="20;200" dur="9.8s" repeatCount="indefinite" begin="2.2s"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="9.8s" repeatCount="indefinite" begin="2.2s"/>
+    </circle>
+  </g>
+
+  <g transform="translate(600, 100)">
+    <text x="0" y="0" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="42" font-weight="800" fill="url(#footerSig)" text-anchor="middle" letter-spacing="-1.5" filter="url(#footerSigGlow)">
+      13rian Vargas
+    </text>
+  </g>
+
+  <g transform="translate(600, 145)">
+    <line x1="-150" y1="0" x2="-22" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
+    <polygon points="0,-7 7,0 0,7 -7,0" fill="#FFD700" opacity="0.75">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+    <line x1="22" y1="0" x2="150" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
+  </g>
+
+  <text x="600" y="180" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" font-weight="700" fill="#FFD700" text-anchor="middle" letter-spacing="6" opacity="0.75">
+    THANKS FOR SCROLLING
+  </text>
+</svg>
