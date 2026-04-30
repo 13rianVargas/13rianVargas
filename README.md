@@ -23,31 +23,27 @@
       <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-fukl.svg" alt="FUKL · Systems Engineering" height="44"/>
     </a>
     &nbsp;
-    <a href="https://github.com/K-Forge">
-      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge · Founder" height="44"/>
+    <a href="https://www.linkedin.com/in/13rian-vargas/">
+      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-linkedin.svg" alt="LinkedIn" height="44"/>
     </a>
   </p>
 
-  <br/>
-
-  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ SOCIAL ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
+  <p>
+  <a href="https://github.com/K-Forge">
+      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge · Founder" height="44"/>
+    </a>
+    &nbsp;
+    <a href="https://kforge.vercel.app">
+      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-link.svg" alt="K-Forge website" height="44"/>
+    </a>
+  </p>
   <p>
     <a href="mailto:brians.vargasc@gmail.com">
       <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-email.svg" alt="Email" height="44"/>
     </a>
     &nbsp;
-    <a href="https://www.linkedin.com/in/13rian-vargas/">
-      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-linkedin.svg" alt="LinkedIn" height="44"/>
-    </a>
-  </p>
-  <p>
     <a href="https://13rian-vargas.vercel.app">
       <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-portfolio.svg" alt="Portfolio" height="44"/>
-    </a>
-    &nbsp;
-    <a href="https://kforge.vercel.app">
-      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-link.svg" alt="K-Forge website" height="44"/>
     </a>
   </p>
 
@@ -246,7 +242,7 @@
     <img src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1" height="36" alt="MySQL"/>
     <img src="https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=47A248" height="36" alt="MongoDB"/>
     <img src="https://img.shields.io/badge/MariaDB-0D1117?style=for-the-badge&logo=mariadb&logoColor=FFFFFF" height="36" alt="MariaDB"/>
-    <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=oracle&logoColor=F80000" height="36" alt="Oracle"/>
+    <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iJTIzRjgwMDAwIiBkPSJNMTYuNSAzaC05QzMuMzYgMyAwIDYuMzYgMCAxMnMzLjM2IDkgNy41IDloOWM0LjE0IDAgNy41LTMuMzYgNy41LTlTMjAuNjQgMyAxNi41IDNtMCAxNWgtOWMtMy4zMSAwLTYtMi42OS02LTZzMi42OS02IDYtNmg5YzMuMzEgMCA2IDIuNjkgNiA2cy0yLjY5IDYtNiA2Ii8+PC9zdmc+" height="36" alt="Oracle"/>
   </p>
 
   <h3>◈ DevOps & Cloud</h3>
