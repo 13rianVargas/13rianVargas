@@ -246,7 +246,7 @@
     <img src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1" height="36" alt="MySQL"/>
     <img src="https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=47A248" height="36" alt="MongoDB"/>
     <img src="https://img.shields.io/badge/MariaDB-0D1117?style=for-the-badge&logo=mariadb&logoColor=FFFFFF" height="36" alt="MariaDB"/>
-    <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" height="36" alt="Oracle"/>
+    <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=oracle&logoColor=F80000" height="36" alt="Oracle"/>
   </p>
 
   <h3>◈ DevOps & Cloud</h3>
