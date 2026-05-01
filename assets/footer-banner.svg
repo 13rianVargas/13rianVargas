@@ -84,20 +84,20 @@
   </g>
 
   <g transform="translate(600, 100)">
-    <text x="0" y="0" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="42" font-weight="800" fill="url(#footerSig)" text-anchor="middle" letter-spacing="-1.5" filter="url(#footerSigGlow)">
+    <text x="0" y="0" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="54" font-weight="800" fill="url(#footerSig)" text-anchor="middle" letter-spacing="-1.5" filter="url(#footerSigGlow)">
       13rian Vargas
     </text>
   </g>
 
   <g transform="translate(600, 145)">
-    <line x1="-150" y1="0" x2="-22" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
+    <line x1="-180" y1="0" x2="-22" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
     <polygon points="0,-7 7,0 0,7 -7,0" fill="#FFD700" opacity="0.75">
       <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
     </polygon>
-    <line x1="22" y1="0" x2="150" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
+    <line x1="22" y1="0" x2="180" y2="0" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
   </g>
 
-  <text x="600" y="180" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="11" font-weight="700" fill="#FFD700" text-anchor="middle" letter-spacing="6" opacity="0.75">
+  <text x="600" y="182" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif" font-size="16" font-weight="700" fill="#FFD700" text-anchor="middle" letter-spacing="6" opacity="0.75">
     THANKS FOR SCROLLING
   </text>
 </svg>

@@ -13,7 +13,7 @@
 <br/><br/>
 
   <a href="https://github.com/13rianVargas">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=900&color=FFD700&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;Microservices+Architecture;K-Forge+Founder+%E2%9A%A1;Concepts+%3E+Code" alt="Roles" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=900&color=FFD700&background=0D1117&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;Microservices+Architecture;K-Forge+Founder+%E2%9A%A1;Concepts+%3E+Code" alt="Roles" />
   </a>
 
 <br/><br/>
@@ -61,13 +61,17 @@
         <p align="left">
           <b>¡Hello World! Here's 13rian.</b>
           <br/><br/>
-          I'm a Full Stack Developer, I love the moment when a system stops feeling like chaos and starts behaving like a single, calm machine.
+          I'm a Full Stack Developer, I love the moment when a system stops feeling like chaos, and starts behaving like a single, calm machine.
           <br/><br/>
-          I founded <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software club at <b>Fundación Universitaria Konrad Lorenz</b>, where my team and I build products — a university mobile app, an e-commerce platform, a library-cafe management system.
+          I founded <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, a software club at <b>Konrad Lorenz Universitary Foundation</b>, where my team and I, build products like an university mobile app, an e-commerce platform, a library-coffee management system.
           <br/><br/>
-          I'd rather understand 3 lines than copy-paste 30. <b>Concepts before code. Architecture before frameworks. Team over individual.</b>
+          I'd rather understand 3 lines than copy-paste 30.<br/>
+          <b>
+          <br/>
+          -> Concepts before code + Architecture before frameworks + Team over individual <-
+          </b>
           <br/><br/>
-          Let's build something good. 💛
+          Let's build something good together. 💛
         </p>
       </td>
     </tr>
@@ -106,7 +110,7 @@
   <h2>◈ K-Forge Ecosystem</h2>
 
   <p>
-    <i>Software development club at Fundación Universitaria Konrad Lorenz · Founded by me</i>
+    <i>Software development club at Konrad Lorenz University Foundation</i>
   </p>
 
   <table>
@@ -121,6 +125,7 @@
         <p align="center">Official club website. Standalone components, signals, i18n (es/en), responsive.</p>
         <p align="center">
           <a href="https://github.com/K-Forge/K-Forge"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <a href="https://kforge.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
@@ -134,6 +139,7 @@
         <p align="center">University mobile app for Konrad Lorenz. Native Android (Kotlin) + iOS (Swift), powered by a Spring Boot microservices backend with JWT and PostgreSQL.</p>
         <p align="center">
           <a href="https://github.com/K-Forge/KApp"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
         </p>
       </td>
@@ -146,9 +152,10 @@
           <img src="https://img.shields.io/badge/Spring_Boot_4-0D1117?style=flat-square&logo=springboot&logoColor=FFD700" alt="Spring"/>
           <img src="https://img.shields.io/badge/Angular_21-0D1117?style=flat-square&logo=angular&logoColor=FFD700" alt="Angular"/>
         </p>
-        <p align="center">University e-commerce. Layered backend, JPA, Angular standalone frontend.</p>
+        <p align="center">University e-commerce. Layered backend, Angular standalone frontend.</p>
         <p align="center">
           <a href="https://github.com/K-Forge/TiendaQ"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
         </p>
       </td>
@@ -159,9 +166,10 @@
           <img src="https://img.shields.io/badge/Express_5-0D1117?style=flat-square&logo=express&logoColor=FFD700" alt="Express"/>
           <img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=FFD700" alt="Mongo"/>
         </p>
-        <p align="center">Library-cafe management. JWT + bcrypt auth, PDF invoicing, Mongoose schemas.</p>
+        <p align="center">Library-coffee management. JWT + bcrypt auth, PDF invoicing, Mongoose schemas.</p>
         <p align="center">
           <a href="https://github.com/K-Forge/Roastory"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
         </p>
       </td>
@@ -184,6 +192,7 @@
         <p align="center">Personal site. 3D identity card, water ripple background, GitHub API integration, dark/light mode.</p>
         <p align="center">
           <a href="https://github.com/13rianVargas/MyPortfolio"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <a href="https://13rian-vargas.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
@@ -197,6 +206,7 @@
         <p align="center">SpemCode encryptor/decryptor for Clan SPEM. Pure HTML/CSS/JS, no dependencies, instant cipher.</p>
         <p align="center">
           <a href="https://github.com/13rianVargas/SpemTraductor"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
           <a href="https://clanspem.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
@@ -291,7 +301,7 @@
 
 <br/><br/>
 
-  <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=FFD700&style=for-the-badge&abbreviated=true" height="44" alt="Visitors"/>
+  <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=FFD700&labelColor=0D1117&style=for-the-badge&abbreviated=true" height="44" alt="Visitors"/>
   &nbsp;
   <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
 
