@@ -144,36 +144,6 @@
         </p>
       </td>
     </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3 align="center">◈ TiendaQ</h3>
-        <p align="center">
-          <img src="https://img.shields.io/badge/Java_25-0D1117?style=flat-square&logo=openjdk&logoColor=FFD700" alt="Java"/>
-          <img src="https://img.shields.io/badge/Spring_Boot_4-0D1117?style=flat-square&logo=springboot&logoColor=FFD700" alt="Spring"/>
-          <img src="https://img.shields.io/badge/Angular_21-0D1117?style=flat-square&logo=angular&logoColor=FFD700" alt="Angular"/>
-        </p>
-        <p align="center">University e-commerce. Layered backend, Angular standalone frontend.</p>
-        <p align="center">
-          <a href="https://github.com/K-Forge/TiendaQ"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
-          &nbsp;
-          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <h3 align="center">◈ Roastory</h3>
-        <p align="center">
-          <img src="https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=nodedotjs&logoColor=FFD700" alt="Node"/>
-          <img src="https://img.shields.io/badge/Express_5-0D1117?style=flat-square&logo=express&logoColor=FFD700" alt="Express"/>
-          <img src="https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=FFD700" alt="Mongo"/>
-        </p>
-        <p align="center">Library-coffee management. JWT + bcrypt auth, PDF invoicing, Mongoose schemas.</p>
-        <p align="center">
-          <a href="https://github.com/K-Forge/Roastory"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
-          &nbsp;
-          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-wip.svg" alt="WIP" height="32"/>
-        </p>
-      </td>
-    </tr>
   </table>
 
   <br/>
