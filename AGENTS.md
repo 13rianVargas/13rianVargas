@@ -82,7 +82,7 @@ When editing SVGs:
 | Service | Purpose |
 |---------|---------|
 | `readme-typing-svg.demolab.com` | Animated typing roles |
-| `ghchart.rshah.org` | Contribution heatmap — **no GitHub token**, so it cannot fail the way the widgets below did |
+| `github-readme-activity-graph.vercel.app` | Contribution wave graph — **kept by explicit preference**, see the caveat below |
 | `quotes-github-readme.vercel.app` | Random daily quote |
 | `komarev.com` | Profile visitor counter |
 | `img.shields.io` | Custom badges + `dynamic/json` stat strip off `api.github.com` |
@@ -99,9 +99,13 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | `github-profile-summary-cards.vercel.app` | `500` |
 | `github-contributor-stats.vercel.app` | `402` |
 | `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
-| `github-readme-activity-graph.vercel.app` | intermittent — see below |
+### The activity graph is a known, accepted risk
 
-`github-readme-activity-graph.vercel.app` deserves its own note because it fails *sometimes*, which is worse than failing outright. It renders `Can't fetch any contribution. Please check your username 😬` on its own token's bad days, and camo then caches that error image, so the profile looks broken long after the service recovered. Probing it 12 times in a row returned 12 healthy responses while the profile was still showing the error. It was replaced with `ghchart.rshah.org`, which proxies GitHub's public contribution chart and needs no token at all — one less credential to expire.
+`github-readme-activity-graph.vercel.app` is **in use on purpose** — the wave graph was preferred over the `ghchart.rshah.org` heatmap, which needs no token but renders GitHub's square grid instead.
+
+Understand what that trades away: the service fails *sometimes*, which is worse than failing outright. It renders `Can't fetch any contribution. Please check your username 😬` on its shared token's bad days, and camo then caches that error image, so the profile looks broken long after the service recovered. Probing it 12 times in a row returned 12 healthy responses while the profile was still showing the error — do not conclude from a green probe that a user's report was wrong.
+
+The fix that keeps the look is the self-hosted fork below. Until it is deployed, expect occasional breakage and do not "fix" it by switching services without asking.
 
 **Rule of thumb: prefer widgets that need no GitHub token.** Every widget that broke on this profile broke at the token or the hosting bill, never at the rendering.
 
@@ -110,6 +114,9 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | Fork | Runtime | Env var | Live instance |
 |------|---------|---------|---------------|
 | `13rianVargas/github-readme-stats` | Node (`api/*.js`) | `PAT_1` | `github-readme-stats-nu-gilt-20.vercel.app` |
+| `13rianVargas/github-readme-activity-graph` | Node/TS (`src/main.ts`, `@vercel/node`) | `TOKEN` | **not deployed yet** |
+
+Every one of these projects names its token env var differently — `PAT_1`, `TOKEN`, `GITHUB_TOKEN1`. Read the source before assuming; the wrong name deploys cleanly and then fails at runtime. For the activity graph it is `process.env.TOKEN`, in `src/fetcher.ts:46`.
 
 A `github-profile-trophy` fork existed briefly and was **deleted on 2026-08-05** — self-hosting it does not work (see below), so there was nothing to keep. Do not re-fork it without reading that section first.
 

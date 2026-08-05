@@ -30,16 +30,6 @@
   </p>
 
   <p>
-    <a href="https://github.com/K-Forge">
-      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge · Founder" height="44"/>
-    </a>
-    &nbsp;
-    <a href="https://kforge.vercel.app">
-      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-link.svg" alt="K-Forge website" height="44"/>
-    </a>
-  </p>
-
-  <p>
     <a href="https://13rian-vargas.vercel.app">
       <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-portfolio.svg" alt="Portfolio" height="44"/>
     </a>
@@ -52,6 +42,16 @@
     &nbsp;
     <a href="https://13rian-vargas.vercel.app/Brian_Vargas_CV_ES.pdf">
       <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-cv-es.svg" alt="Descargar CV en Español" height="44"/>
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/K-Forge">
+      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge · Founder" height="44"/>
+    </a>
+    &nbsp;
+    <a href="https://kforge.vercel.app">
+      <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-link.svg" alt="K-Forge website" height="44"/>
     </a>
   </p>
 
@@ -167,13 +167,18 @@
   <h2>◈ Contribution Activity</h2>
 
   <!--
-    ghchart, not github-readme-activity-graph. The activity-graph service needs its own GitHub
-    token and intermittently renders "Can't fetch any contribution. Please check your username",
-    which camo then caches for a while — it looks permanently broken even after it recovers.
-    ghchart proxies GitHub's public contribution chart with no token, so it has no such failure mode.
+    The wave graph, by explicit preference over the ghchart heatmap.
+
+    Caveat this is knowingly accepting: this service needs its own GitHub token and
+    intermittently renders "Can't fetch any contribution. Please check your username".
+    Camo then caches that error, so the profile keeps looking broken after it recovers.
+
+    TODO — point at the self-hosted fork https://github.com/13rianVargas/github-readme-activity-graph
+    once it is deployed to Vercel (env var is `TOKEN`, per src/fetcher.ts:46 — not PAT_1).
+    That removes the shared-token failure mode while keeping this exact look.
   -->
   <a href="https://github.com/13rianVargas">
-    <img src="https://ghchart.rshah.org/FFD700/13rianVargas" width="100%" alt="Contribution heatmap — last year of commits"/>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=13rianVargas&bg_color=0D1117&color=FFD700&line=FFD700&point=FFF8DC&area=true&area_color=FFD700&hide_border=true&custom_title=Daily%20commits" alt="Activity Graph — daily commits" width="100%"/>
   </a>
 
 <br/><br/>
