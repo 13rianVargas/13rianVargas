@@ -8,7 +8,9 @@
 
 This repository contains the **GitHub profile README** for Brian Vargas (`@13rianVargas`). It is displayed on the GitHub profile page at https://github.com/13rianVargas.
 
-The README presents Brian's identity as a Full Stack Developer and K-Forge founder, with custom animated SVG banners, GitHub stats, and tech stack badges.
+The README presents Brian's identity as a **Java Backend Developer | Full Stack** and K-Forge founder, with custom animated SVG banners, GitHub stats, and tech stack badges.
+
+> **Source of truth:** the portfolio at <https://13rian-vargas.vercel.app> owns the bio, role, project list and tech stack. When they disagree, the portfolio wins and this README follows. Its content lives in `MyPortfolio/src/i18n/ui.ts` and `MyPortfolio/src/components/sections/`.
 
 ---
 
@@ -18,9 +20,20 @@ The README presents Brian's identity as a Full Stack Developer and K-Forge found
 13rianVargas/
 ├── README.md                   # GitHub profile README (rendered at github.com/13rianVargas)
 └── assets/
-    ├── header-banner.svg       # Animated hero banner (name + role + particles)
-    ├── divider.svg             # Animated gold shimmer divider (between sections)
-    └── footer-banner.svg       # Animated wave footer (closing tag + waves)
+    ├── header-banner.svg       # 1200x400 · animated hero (deer mark, name, role, ID-card frame)
+    ├── divider.svg             # 1200x6   · animated gold shimmer divider (between sections)
+    ├── footer-banner.svg       # 1200x260 · animated footer (deer mark, signature, particles)
+    ├── badge-fukl.svg          # 320x44   · university
+    ├── badge-linkedin.svg      # 320x44   · LinkedIn
+    ├── badge-kforge.svg        # 320x44   · K-Forge org
+    ├── badge-kforge-link.svg   # 320x44   · K-Forge website
+    ├── badge-portfolio.svg     # 320x44   · portfolio
+    ├── badge-cv-en.svg         # 320x44   · CV download (English)
+    ├── badge-cv-es.svg         # 320x44   · CV download (Spanish)
+    ├── badge-repo.svg          # 100x32   · project repo pill
+    ├── badge-live.svg          # 110x32   · project live pill
+    ├── badge-wip.svg           # 100x32   · project WIP pill
+    └── badge-prototype.svg     # 130x32   · project prototype pill (demo, not production)
 ```
 
 ---
@@ -46,9 +59,15 @@ The three custom SVGs in `assets/` use SMIL animations (`<animate>`, `<animateTr
 https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/<file>.svg
 ```
 
-- **`header-banner.svg`** — 1200x320. Animated grid background, floating particles, dashed border lines, glowing brackets, gradient text shimmer on name, blinking terminal cursor.
+- **`header-banner.svg`** — 1200x400. Hex mesh background, floating particles, expanding rings, rotating diamonds, gradient text shimmer on name. Carries the **identity-card motif**: corner brackets, `ID: 000-013` and `BOGOTÁ D.C. · CO`, echoing the 3D flip card on the portfolio.
 - **`divider.svg`** — 1200x6. Soft gold base + animated white shimmer that travels left-to-right (4s loop).
-- **`footer-banner.svg`** — 1200x160. Animated wave layers (3 layers at different speeds) with gradient closing tag.
+- **`footer-banner.svg`** — 1200x260. Hex mesh, rising particles, expanding rings from the top edge, gold signature.
+
+### Deer mark
+
+Both banners carry a **deer head** drawn as gold line art — the same logo as the portfolio favicon (`MyPortfolio/public/icons/deerhead.svg`), and the main visual link between the two properties.
+
+Do **not** import the portfolio's file: it is a 248 KB traced silhouette that blows the size budget and clashes with the hand-drawn stroke style. The README version is a redrawn geometric path set (antlers, ears, head, eyes) living inline in each banner. Keep both copies in sync when editing.
 
 When editing SVGs:
 - Stick to SMIL only — CSS animations are sandboxed in GitHub camo.
@@ -62,15 +81,57 @@ When editing SVGs:
 | Service | Purpose |
 |---------|---------|
 | `readme-typing-svg.demolab.com` | Animated typing roles |
-| `github-readme-stats.vercel.app` | Stats card + top languages |
-| `github-readme-streak-stats.herokuapp.com` | Contribution streak |
-| `github-profile-summary-cards.vercel.app` | Profile details, repos-per-language, productive time |
 | `github-readme-activity-graph.vercel.app` | Contribution graph |
-| `github-profile-trophy.vercel.app` | Trophies |
-| `skillicons.dev` | Animated tech stack icons |
 | `quotes-github-readme.vercel.app` | Random daily quote |
 | `komarev.com` | Profile visitor counter |
-| `img.shields.io` | Custom badges (gold-on-black palette) |
+| `img.shields.io` | Custom badges + `dynamic/json` stat strip off `api.github.com` |
+| `raw.githubusercontent.com` | Custom SVG assets in `assets/` |
+
+### Do not use these — verified dead
+
+Free hobby instances of the popular readme widgets are being shut down. Probed and confirmed broken:
+
+| Dead host | Status |
+|-----------|--------|
+| `github-readme-stats.vercel.app` | `503 DEPLOYMENT_PAUSED` |
+| `github-profile-trophy.vercel.app` | `402 DEPLOYMENT_DISABLED` |
+| `github-profile-summary-cards.vercel.app` | `500` |
+| `github-contributor-stats.vercel.app` | `402` |
+| `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
+
+**Do not swap in a third-party mirror** — that is the same class of instance and it will die too. The replacement is self-hosting:
+
+| Fork | Runtime | Env vars the code actually reads |
+|------|---------|---------------------------------|
+| `13rianVargas/github-readme-stats` | Node (`api/*.js`) | `PAT_1` |
+| `13rianVargas/github-profile-trophy` | **Deno** (`vercel-deno@3.1.1`, set in its `vercel.json`) | `GITHUB_TOKEN1` **and** `GITHUB_TOKEN2` — both required |
+
+The two projects use **different** env var names — verified in source, not assumed: `github-profile-trophy` reads `Deno.env.get("GITHUB_TOKEN1")` and `GITHUB_TOKEN2` in `src/Services/GithubApiService.ts:24-27`, then indexes `TOKENS[attempt]` when retrying. Naming either one `PAT_1` yields an unauthenticated instance.
+
+**Trophy deploy gotchas** (from its own `## Self-hosting on Vercel` section, added upstream in `ccb591b8`):
+
+1. Set both `GITHUB_TOKEN1` **and** `GITHUB_TOKEN2` to the same token value — `TOKENS[attempt]` is indexed on retry.
+2. **Vercel → Settings → Deployment Protection → Vercel Authentication → "Only Preview Deployments."** Left on the default, production returns 401 to anonymous traffic and the trophy card renders blank through GitHub's camo proxy.
+3. Token scopes for this project: `read:user` + `public_repo` (only `repo` if private contributions should count).
+
+### Trophy: a fresh deploy of `master` does not boot (verified 2026-08-05)
+
+Doing all three of the above is **not enough**. A Vercel deploy of current `master` returns `500 FUNCTION_INVOCATION_FAILED` on **every** URL, including `/` with no query string. That path renders a static HTML form and never calls the GitHub API or reads a token, so the failure is at **module load, before any request logic**. Env vars are not the cause — do not chase them.
+
+Proof, against a community instance running an older deploy:
+
+| Instance | `/` with no username |
+|---|---|
+| ours, deployed 2026-08-05 from `master` | `500 FUNCTION_INVOCATION_FAILED` |
+| `github-profile-trophy-orcin-eta.vercel.app` | `400` — the expected "username is required" page |
+
+Likely cause: `deps.ts` imports over raw `https://deno.land/std@0.203.0/...` and `deno.land/x/...` URLs, while the pinned runtime `vercel-deno@3.1.1` has not shipped since **2024-07-16**. Upstream issue [#455](https://github.com/ryo-ma/github-profile-trophy/issues/455) and PRs #456/#457 propose migrating those imports to JSR; all three are still **open and unmerged**.
+
+Rolling the fork back to an older commit is unlikely to help — `deps.ts` is unchanged across recent history, so what differs is Vercel's current build image, not the code.
+
+**Decision (2026-08-05): the Trophies section is dropped.** It is gone from `README.md`, replaced by a comment explaining why. Do not re-add it — not self-hosted (does not boot), and **not** pointed at a community instance either: 6 of the 10 listed in the upstream README are already 404. Revisit only if #457 merges upstream.
+
+**Current state:** the GitHub Stats section is live and self-hosted at `github-readme-stats-nu-gilt-20.vercel.app` (verified: 1219 commits, 52 PRs, 112 issues, plus top-langs). A `200` is not proof a widget works — grep the response body for real content (`Total Commits`, trophy titles) before trusting it.
 
 ---
 
@@ -78,8 +139,10 @@ When editing SVGs:
 
 - **Single file repo.** Only `README.md` and `assets/` matter.
 - **GitHub-flavored markdown** with embedded HTML for layout.
-- **Color discipline:** every new badge or widget must use the gold `#FFD700` + black `#0D1117` palette. No off-brand colors.
-- **K-Forge references:** when listing K-Forge projects, the stack descriptions must match the K-Forge ecosystem (K-Forge Web, KApp, TiendaQ, Roastory). KApp is Java + Spring Boot microservices — never React Native.
+- **Color discipline:** every new badge or widget must use the gold `#FFD700` + black `#0D1117` palette. No off-brand colors. (The portfolio's amber `#fbbf24` is the same family — no need to reconcile them.)
+- **No contact data.** Never put an email, phone number, `mailto:` link or `wa.me` link in this repo. The CV badges link to the PDFs already published on the portfolio; that is the only contact route. A `badge-email.svg` used to exist and was deliberately deleted — do not restore it.
+- **Projects follow the portfolio.** The list mirrors the portfolio's 5 projects: KApp, AMODEL, K-Forge, SpemTraductor, MyPortfolio. Add a project here only after it appears there. TiendaQ and Roastory were removed for this reason — they are real K-Forge work, but not on the portfolio.
+- **K-Forge stacks:** K-Forge's own README stays authoritative for K-Forge project internals. KApp is Java + Spring Boot microservices — never React Native.
 - **Tooling badges:** keep npm + pnpm + Bun as three separate badges (no duplicates).
 - **Commits:** Conventional Commits, English, lowercase.
   ```
@@ -95,7 +158,21 @@ When editing SVGs:
 - Modify `README.md` and files inside `assets/`.
 - **Maintain the gold/black aesthetic.** Do not introduce purple, blue, or other accent colors.
 - **Maintain story consistency with K-Forge ecosystem.** Project list and stacks must match `K-Forge/.github/profile/README.md`.
-- **Verify badge URLs work** before committing — broken images degrade the public profile.
+- **Verify every badge URL before committing** — broken images degrade the public profile. Sweep the whole file, do not spot-check:
+  ```bash
+  grep -oE 'https://[^"]+' README.md | sed 's/&amp;/\&/g' | sort -u \
+    | while read -r u; do c=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 -L "$u"); [ "$c" = 200 ] || echo "[$c] $u"; done
+  ```
+  LinkedIn answering `999` is expected — that is their anti-bot gate, not a broken link. Anything else is a real failure.
+- **Never hardcode the years of experience.** The portfolio computes it from `START_YEAR = 2023`, so it rolls over every January. Keep it as prose.
 - **Keep tooling badges accurate:** npm, pnpm, Bun (3 distinct, no duplicates).
 - **Custom SVG edits:** test rendering by viewing the raw URL after push — GitHub camo caches for ~5min.
 - No automatic commits. Present changes for review first.
+
+
+---
+
+## Temporary Files
+
+- `tmp/` is gitignored. Store one-off scripts and throwaway files there.
+- Delete after use. Never commit anything from `tmp/`.
