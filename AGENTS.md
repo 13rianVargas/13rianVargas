@@ -101,18 +101,18 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 
 **Do not swap in a third-party mirror** — that is the same class of instance and it will die too. The replacement is self-hosting:
 
-| Fork | Runtime | Env vars the code actually reads |
-|------|---------|---------------------------------|
-| `13rianVargas/github-readme-stats` | Node (`api/*.js`) | `PAT_1` |
-| `13rianVargas/github-profile-trophy` | **Deno** (`vercel-deno@3.1.1`, set in its `vercel.json`) | `GITHUB_TOKEN1` **and** `GITHUB_TOKEN2` — both required |
+| Fork | Runtime | Env var | Live instance |
+|------|---------|---------|---------------|
+| `13rianVargas/github-readme-stats` | Node (`api/*.js`) | `PAT_1` | `github-readme-stats-nu-gilt-20.vercel.app` |
 
-The two projects use **different** env var names — verified in source, not assumed: `github-profile-trophy` reads `Deno.env.get("GITHUB_TOKEN1")` and `GITHUB_TOKEN2` in `src/Services/GithubApiService.ts:24-27`, then indexes `TOKENS[attempt]` when retrying. Naming either one `PAT_1` yields an unauthenticated instance.
+A `github-profile-trophy` fork existed briefly and was **deleted on 2026-08-05** — self-hosting it does not work (see below), so there was nothing to keep. Do not re-fork it without reading that section first.
 
-**Trophy deploy gotchas** (from its own `## Self-hosting on Vercel` section, added upstream in `ccb591b8`):
+If it is ever revived, its requirements differ from the stats project — verified in source, not assumed:
 
-1. Set both `GITHUB_TOKEN1` **and** `GITHUB_TOKEN2` to the same token value — `TOKENS[attempt]` is indexed on retry.
-2. **Vercel → Settings → Deployment Protection → Vercel Authentication → "Only Preview Deployments."** Left on the default, production returns 401 to anonymous traffic and the trophy card renders blank through GitHub's camo proxy.
-3. Token scopes for this project: `read:user` + `public_repo` (only `repo` if private contributions should count).
+1. It is **Deno** (`vercel-deno@3.1.1`, pinned in its own `vercel.json`), not Node.
+2. It reads `Deno.env.get("GITHUB_TOKEN1")` **and** `GITHUB_TOKEN2` in `src/Services/GithubApiService.ts:24-27`, then indexes `TOKENS[attempt]` on retry. Both must be set, to the same token. Naming either one `PAT_1` yields an unauthenticated instance.
+3. **Vercel → Settings → Deployment Protection → Vercel Authentication → "Only Preview Deployments."** Left on the default, production returns 401 to anonymous traffic and the card renders blank through GitHub's camo proxy.
+4. Token scopes: `read:user` + `public_repo` (only `repo` if private contributions should count).
 
 ### Trophy: a fresh deploy of `master` does not boot (verified 2026-08-05)
 
