@@ -143,11 +143,19 @@
     (env PAT_1). The public github-readme-stats.vercel.app instance returns 503 DEPLOYMENT_PAUSED
     permanently — do not point back at it, and do not swap in a third-party mirror.
   -->
+  <!--
+    Stacked, not side by side. The two cards have different aspect ratios (467x195 vs 300x165),
+    so a shared height leaves them visibly mismatched. card_width=467 on top-langs matches the
+    stats card's native width instead, and stacking keeps their left and right edges aligned.
+  -->
   <a href="https://github.com/13rianVargas">
-    <img height="200" src="https://github-readme-stats-nu-gilt-20.vercel.app/api?username=13rianVargas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FFD700&icon_color=FFD700&text_color=FFF8DC&ring_color=FFD700&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+    <img width="467" src="https://github-readme-stats-nu-gilt-20.vercel.app/api?username=13rianVargas&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FFD700&icon_color=FFD700&text_color=FFF8DC&ring_color=FFD700&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
   </a>
+
+  <br/>
+
   <a href="https://github.com/13rianVargas">
-    <img height="200" src="https://github-readme-stats-nu-gilt-20.vercel.app/api/top-langs/?username=13rianVargas&layout=compact&hide_border=true&bg_color=0D1117&title_color=FFD700&text_color=FFF8DC" alt="Top Languages"/>
+    <img width="467" src="https://github-readme-stats-nu-gilt-20.vercel.app/api/top-langs/?username=13rianVargas&layout=compact&card_width=467&hide_border=true&bg_color=0D1117&title_color=FFD700&text_color=FFF8DC" alt="Top Languages"/>
   </a>
 
 <br/><br/>
@@ -158,8 +166,14 @@
 
   <h2>◈ Contribution Activity</h2>
 
+  <!--
+    ghchart, not github-readme-activity-graph. The activity-graph service needs its own GitHub
+    token and intermittently renders "Can't fetch any contribution. Please check your username",
+    which camo then caches for a while — it looks permanently broken even after it recovers.
+    ghchart proxies GitHub's public contribution chart with no token, so it has no such failure mode.
+  -->
   <a href="https://github.com/13rianVargas">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=13rianVargas&bg_color=0D1117&color=FFD700&line=FFD700&point=FFF8DC&area=true&hide_border=true&custom_title=Daily%20commits" alt="Activity Graph" width="100%"/>
+    <img src="https://ghchart.rshah.org/FFD700/13rianVargas" width="100%" alt="Contribution heatmap — last year of commits"/>
   </a>
 
 <br/><br/>
@@ -214,6 +228,8 @@
         </p>
         <p align="center">
           <a href="https://github.com/13rianVargas/A-Minecraft-Ordinary-Differential-Equation-Lab"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-repo.svg" alt="Repo" height="32"/></a>
+          &nbsp;
+          <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-video-soon.svg" alt="Video soon" height="32"/>
         </p>
       </td>
     </tr>
@@ -277,10 +293,19 @@
       <td width="50%" valign="top">
         <h3 align="center">◈ K-Forge Ecosystem</h3>
         <p align="center">
-          <i>More products the club is building —<br/>e-commerce, library-coffee management and more.</i>
+          <img src="https://img.shields.io/badge/TiendaQ-0D1117?style=flat-square&logo=openjdk&logoColor=FFD700" alt="TiendaQ"/>
+          <img src="https://img.shields.io/badge/Roastory-0D1117?style=flat-square&logo=mongodb&logoColor=FFD700" alt="Roastory"/>
+          <img src="https://img.shields.io/badge/KApp-0D1117?style=flat-square&logo=kotlin&logoColor=FFD700" alt="KApp"/>
+        </p>
+        <p align="center">
+          The club ships more than my own work — a university e-commerce, a library-coffee
+          management system and the mobile app. I coordinate the technical team, the planning
+          and the architecture guidelines.
         </p>
         <p align="center">
           <a href="https://github.com/K-Forge"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge org" height="32"/></a>
+          &nbsp;
+          <a href="https://kforge.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
     </tr>
@@ -324,7 +349,7 @@
     <img src="https://img.shields.io/badge/MongoDB-0D1117?style=for-the-badge&logo=mongodb&logoColor=47A248" height="36" alt="MongoDB"/>
     <img src="https://img.shields.io/badge/MariaDB-0D1117?style=for-the-badge&logo=mariadb&logoColor=FFFFFF" height="36" alt="MariaDB"/>
     <img src="https://img.shields.io/badge/Oracle-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0Y4MDAwMCIgZD0iTTE2LjUgM2gtOUMzLjM2IDMgMCA2LjM2IDAgMTJzMy4zNiA5IDcuNSA5aDljNC4xNCAwIDcuNS0zLjM2IDcuNS05UzIwLjY0IDMgMTYuNSAzbTAgMTVoLTljLTMuMzEgMC02LTIuNjktNi02czIuNjktNiA2LTZoOWMzLjMxIDAgNiAyLjY5IDYgNnMtMi42OSA2LTYgNiIvPjwvc3ZnPg==" height="36" alt="Oracle"/>
-    <img src="https://img.shields.io/badge/PL%2FSQL-0D1117?style=for-the-badge&logoColor=F80000" height="36" alt="PL/SQL"/>
+    <img src="https://img.shields.io/badge/PL%2FSQL-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgZmlsbD0iI0Y4MDAwMCI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjkiIHJ5PSIzLjIiLz48cGF0aCBkPSJNMyA4LjJ2My40YzAgMS43NyA0LjAzIDMuMiA5IDMuMnM5LTEuNDMgOS0zLjJWOC4yYzAgMS43Ny00LjAzIDMuMi05IDMuMlMzIDkuOTcgMyA4LjJ6Ii8+PHBhdGggZD0iTTMgMTQuNlYxOGMwIDEuNzcgNC4wMyAzLjIgOSAzLjJzOS0xLjQzIDktMy4ydi0zLjRjMCAxLjc3LTQuMDMgMy4yLTkgMy4ycy05LTEuNDMtOS0zLjJ6Ii8+PC9nPjwvc3ZnPgo=" height="36" alt="PL/SQL"/>
   </p>
 
   <h3>◈ Tools &amp; DevOps</h3>
@@ -351,49 +376,46 @@
 
   <h2>◈ Credentials</h2>
 
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://img.shields.io/badge/CCST_Cybersecurity-974%2F1000-0D1117?style=for-the-badge&logo=cisco&logoColor=FFD700&labelColor=0D1117&color=FFD700" height="40" alt="CCST Cybersecurity 974/1000"/>
-      </td>
-    </tr>
-  </table>
+  <p><sub><i>Everything here is backed by a certificate or a digital badge.</i></sub></p>
+
+  <br/>
+
+  <!-- Headline credential, given the weight it earned -->
+  <img src="https://img.shields.io/badge/CCST_CYBERSECURITY-974%20%2F%201000-FFD700?style=for-the-badge&logo=cisco&logoColor=0D1117&labelColor=0D1117" height="46" alt="CCST Cybersecurity — 974 of 1000"/>
 
   <p>
-    <sub><i>Official proctored 100-160 exam (Certiport), 05/2026 — 700 is the minimum to pass.<br/>
-    100% in network security, vulnerability assessment and incident handling.</i></sub>
+    <sub><i>Official proctored 100-160 exam (Certiport), 05/2026 — <b>700</b> is the minimum to pass.<br/>
+    <b>100%</b> in network security, vulnerability assessment and incident handling.</i></sub>
   </p>
+
+  <br/>
 
   <table>
     <tr>
-      <td><b>◈ Systems Engineering</b></td>
-      <td>Fundación Universitaria Konrad Lorenz</td>
-      <td><sub>2023 — 2027</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Cisco Networking Academy</b></td>
-      <td>Ethical Hacker · CCNA SRWE · Intro to Cybersecurity · NDG Linux Unhatched</td>
-      <td><sub>09/2024 — 05/2026</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Google Cloud</b></td>
-      <td>16 courses and digital badges — Generative AI, Data &amp; Analytics, Infrastructure</td>
-      <td><sub>02/2026 — 05/2026</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Platzi</b></td>
-      <td>Java &amp; Spring · 2 certificates · 32 hours</td>
-      <td><sub>02/2026</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Interamerican Leadership Training</b></td>
-      <td>World Organization of the Scout Movement · Santo Domingo</td>
-      <td><sub>12/2023 — 01/2024</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Oracle Next Education</b></td>
-      <td>Web Programming — <i>this is where my path began</i></td>
-      <td><sub>04/2023 — 05/2023</sub></td>
+      <td width="33%" align="center" valign="top">
+        <img src="https://img.shields.io/badge/Cisco_Networking_Academy-0D1117?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="34" alt="Cisco Networking Academy"/>
+        <p align="center">
+          Ethical Hacker · CCNA Switching, Routing &amp; Wireless Essentials ·<br/>
+          Intro to Cybersecurity · NDG Linux Unhatched
+        </p>
+        <p align="center"><sub><b>4 badges · 5 certificates</b><br/>09/2024 — 05/2026</sub></p>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <img src="https://img.shields.io/badge/Google_Cloud-0D1117?style=for-the-badge&logo=googlecloud&logoColor=4285F4" height="34" alt="Google Cloud"/>
+        <p align="center">
+          Generative AI · Data &amp; Analytics ·<br/>
+          Infrastructure &amp; Operations
+        </p>
+        <p align="center"><sub><b>16 courses and digital badges</b><br/>02/2026 — 05/2026</sub></p>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <img src="https://img.shields.io/badge/Platzi-0D1117?style=for-the-badge&logo=platzi&logoColor=98CA3F" height="34" alt="Platzi"/>
+        <p align="center">
+          Java &amp; Spring —<br/>
+          the backend track
+        </p>
+        <p align="center"><sub><b>2 certificates · 32 hours</b><br/>02/2026</sub></p>
+      </td>
     </tr>
   </table>
 
@@ -403,24 +425,23 @@
 
   <table>
     <tr>
-      <td><b>◈ Cisco Cyber Challenge</b></td>
-      <td>Cisco Systems · won the voucher used to sit the CCST exam</td>
-      <td><sub>04/2026</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ Honorable Mention ×2</b></td>
-      <td>Konrad Lorenz · minimum 43/50 average</td>
-      <td><sub>02/2024 · 07/2026</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ National Programming Marathon</b></td>
-      <td>University representative · ~120 teams · Java, Python and C++</td>
-      <td><sub>2024</sub></td>
-    </tr>
-    <tr>
-      <td><b>◈ BP &amp; Daniel Isaza Isaza Decorations</b></td>
-      <td>Scouts of Colombia</td>
-      <td><sub>2023</sub></td>
+      <td width="50%" align="center" valign="top">
+        <img src="https://img.shields.io/badge/Cisco_Cyber_Challenge-0D1117?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="34" alt="Cisco Cyber Challenge"/>
+        <p align="center">
+          Won the voucher that paid for the CCST exam above —<br/>
+          which I then passed with 974/1000.
+        </p>
+        <p align="center"><sub>Cisco Systems · Bogotá D.C. · <b>04/2026</b></sub></p>
+      </td>
+      <td width="50%" align="center" valign="top">
+        <img src="https://img.shields.io/badge/National_Programming_Marathon-0D1117?style=for-the-badge&logo=codeforces&logoColor=FFD700" height="34" alt="National Programming Marathon"/>
+        <p align="center">
+          University representative against ~120 teams,<br/>
+          qualifier for the Latin American Regional.<br/>
+          Solved in Java, Python and C++.
+        </p>
+        <p align="center"><sub>Konrad Lorenz · <b>2024</b></sub></p>
+      </td>
     </tr>
   </table>
 

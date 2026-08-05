@@ -33,7 +33,8 @@ The README presents Brian's identity as a **Java Backend Developer | Full Stack*
     ├── badge-repo.svg          # 100x32   · project repo pill
     ├── badge-live.svg          # 110x32   · project live pill
     ├── badge-wip.svg           # 100x32   · project WIP pill
-    └── badge-prototype.svg     # 130x32   · project prototype pill (demo, not production)
+    ├── badge-prototype.svg     # 130x32   · project prototype pill (demo, not production)
+    └── badge-video-soon.svg    # 152x32   · project pill for a demo video not yet published
 ```
 
 ---
@@ -81,7 +82,7 @@ When editing SVGs:
 | Service | Purpose |
 |---------|---------|
 | `readme-typing-svg.demolab.com` | Animated typing roles |
-| `github-readme-activity-graph.vercel.app` | Contribution graph |
+| `ghchart.rshah.org` | Contribution heatmap — **no GitHub token**, so it cannot fail the way the widgets below did |
 | `quotes-github-readme.vercel.app` | Random daily quote |
 | `komarev.com` | Profile visitor counter |
 | `img.shields.io` | Custom badges + `dynamic/json` stat strip off `api.github.com` |
@@ -98,6 +99,11 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | `github-profile-summary-cards.vercel.app` | `500` |
 | `github-contributor-stats.vercel.app` | `402` |
 | `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
+| `github-readme-activity-graph.vercel.app` | intermittent — see below |
+
+`github-readme-activity-graph.vercel.app` deserves its own note because it fails *sometimes*, which is worse than failing outright. It renders `Can't fetch any contribution. Please check your username 😬` on its own token's bad days, and camo then caches that error image, so the profile looks broken long after the service recovered. Probing it 12 times in a row returned 12 healthy responses while the profile was still showing the error. It was replaced with `ghchart.rshah.org`, which proxies GitHub's public contribution chart and needs no token at all — one less credential to expire.
+
+**Rule of thumb: prefer widgets that need no GitHub token.** Every widget that broke on this profile broke at the token or the hosting bill, never at the rendering.
 
 **Do not swap in a third-party mirror** — that is the same class of instance and it will die too. The replacement is self-hosting:
 
