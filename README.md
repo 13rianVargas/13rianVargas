@@ -69,35 +69,20 @@
           <b>¡Hello World! Here's 13rian.</b>
           <br/><br/>
           I got hooked on figuring out how things work underneath. That's how I ended up in the
-          backend — <b>Java and Spring Boot</b>, mostly — building systems that still stand up once
-          real people start using them.
+          backend — <b>Java and Spring Boot</b>, mostly — building <b>REST APIs</b>, relational data
+          models and services small enough that one failing doesn't take the rest down with it, all
+          containerised with <b>Docker</b>. When a project needs the other half, I move to
+          <b>Angular and TypeScript</b>.
           <br/><br/>
-          That's where most of my work lives: <b>REST APIs</b>, relational data models, services
-          split so they can fail on their own, everything containerised with <b>Docker</b>. When a
-          project needs the other half I move to <b>Angular and TypeScript</b>, and it doesn't feel
-          like a different job.
-          <br/><br/>
-          <b>Architecture</b> is the part I keep coming back to. Where a boundary goes, what a
-          service is allowed to own, which tradeoff you're actually buying when you split something
-          in two — I'll spend a whole day on that and call it a good one.
-          <br/><br/>
-          Lately I've been going deep on <b>cybersecurity and cloud</b> — CCST, CCNA, Google Cloud.
-          Not to collect certificates: knowing what happens between the request leaving the browser
-          and the row landing in the database makes me better at the part I actually write.
-          <br/><br/>
-          The curiosity doesn't stay inside the job description. <b>AMODEL</b>, further down,
-          started as a differential-equations assignment and ended up as 27,648 measurements and a
-          falsified model. I learn fastest when a problem drags me somewhere I haven't been —
-          numerical methods, network internals, whatever it turns out to need.
+          <b>Architecture</b> is the part I keep coming back to: where a boundary goes, what a
+          service is allowed to own, which tradeoff a split actually buys. That same curiosity
+          pulled me into <b>cybersecurity and cloud</b> (CCST, CCNA, Google Cloud) — and into 27,648
+          measurements for <b>AMODEL</b>, further down, which ended up falsifying the model it set
+          out to fit.
           <br/><br/>
           I founded and lead <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software
-          development club at <b>Fundación Universitaria Konrad Lorenz</b>, where I coordinate the
-          technical team and set the architecture guidelines. Getting a team to agree on a design
-          turned out to be its own engineering problem, and I like that part more than I expected.
-          <br/><br/>
-          <b>How I work:</b> settle the API contract before the implementation, keep services small
-          enough that one failing doesn't take the rest down with it, model the data before the
-          endpoints, and leave the reasoning written down — usually for myself, months later.
+          development club at <b>Konrad Lorenz</b>, where I coordinate the technical team and set
+          the architecture guidelines.
           <br/><br/>
           Open to <b>backend</b>, <b>full stack</b>, <b>DevOps</b> and <b>cybersecurity</b> roles.
           The constant is that I want to keep learning computer science properly — the fundamentals
