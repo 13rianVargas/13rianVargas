@@ -118,6 +118,9 @@
     measured 8/8. FOLLOWERS uses shields' native /github/ route, which uses shields'
     own token, so it does not have this problem.
 
+    komarev ignores labelColor outright and always serves #555, so shields is pinned to the
+    same value — otherwise the label halves do not match across the three badges.
+
     The value side is deep gold #8A6D00, not bright #FFD700. komarev hardcodes fill="#fff"
     for its text and exposes no parameter to change it, so white on bright gold measured a
     1.4:1 contrast ratio — unreadable. At #8A6D00 white reaches 4.9:1 and shields picks white
@@ -125,11 +128,11 @@
     since it auto-switches to dark ink there.
   -->
   <p>
-    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=8A6D00&labelColor=30363D&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
+    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=8A6D00&labelColor=555555&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fungh.cc%2Fusers%2F13rianVargas%2Frepos&query=%24.repos.length&label=REPOS&style=for-the-badge&color=8A6D00&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fungh.cc%2Fusers%2F13rianVargas%2Frepos&query=%24.repos.length&label=REPOS&style=for-the-badge&color=8A6D00&labelColor=555555&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
     &nbsp;
-    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=8A6D00&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
+    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=8A6D00&labelColor=555555&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
   </p>
 
   <!--
