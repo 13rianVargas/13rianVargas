@@ -48,6 +48,7 @@ The README presents Brian's identity as a **Java Backend Developer | Full Stack*
     ├── cat-backend.svg         # 560x34   · tech-stack category header ├ generated, see below
     ├── cat-databases.svg       # 560x34   · tech-stack category header │
     └── cat-tools.svg           # 560x34   · tech-stack category header ┘
+```
 
 ### Cards and category headers are generated, not hand-edited
 
@@ -59,7 +60,6 @@ Two rules baked into the template, learned by breaking them first:
 - **Cards that share a table row take a `pad_to` line count** so they render at identical heights. Without it a 3-line card next to a 4-line card leaves the row visibly ragged.
 
 SVG `<text>` does not wrap — body copy is passed in as an explicit list of lines.
-```
 
 ---
 
@@ -92,7 +92,9 @@ https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/<file>.s
 
 Both banners carry a **deer head** drawn as gold line art — the same logo as the portfolio favicon (`MyPortfolio/public/icons/deerhead.svg`), and the main visual link between the two properties.
 
-Do **not** import the portfolio's file: it is a 248 KB traced silhouette that blows the size budget and clashes with the hand-drawn stroke style. The README version is a redrawn geometric path set (antlers, ears, head, eyes) living inline in each banner. Keep both copies in sync when editing.
+Do **not** import the portfolio's file: it is a 248 KB traced silhouette that blows the size budget and clashes with the hand-drawn stroke style. The README version is a redrawn geometric path set living inline in each banner — antlers, angular ears, a faceted head and a muzzle chevron. Keep both copies in sync when editing.
+
+**It deliberately has no eyes.** The first version drew two dots for them and the whole mark read as a cartoon face; removing them is what makes it read as a heraldic crest instead.
 
 When editing SVGs:
 - Stick to SMIL only — CSS animations are sandboxed in GitHub camo.
@@ -123,6 +125,7 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | `github-profile-summary-cards.vercel.app` | `500` |
 | `github-contributor-stats.vercel.app` | `402` |
 | `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
+
 ### The activity graph is a known, accepted risk
 
 `github-readme-activity-graph.vercel.app` is **in use on purpose** — the wave graph was preferred over the `ghchart.rshah.org` heatmap, which needs no token but renders GitHub's square grid instead.
