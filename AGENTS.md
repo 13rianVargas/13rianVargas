@@ -61,6 +61,8 @@ Two rules baked into the template, learned by breaking them first:
 
 SVG `<text>` does not wrap — body copy is passed in as an explicit list of lines.
 
+- **Category headers are symmetric about their own centre.** The README centres everything, so a header whose label sits left with a rule running only right still *looks* off-centre even though the SVG is centred. Rules and diamonds are mirrored around a centred `text-anchor="middle"` label. To check, render the headers over a vertical guide at `width / 2` and confirm it splits them cleanly.
+
 ---
 
 ## Brand Identity

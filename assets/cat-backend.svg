@@ -1,8 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="34" viewBox="0 0 560 34">
-  <polygon points="12,10 19,17 12,24 5,17" fill="#FFD700">
+  <line x1="40" y1="17" x2="142.4" y2="17" stroke="#FFD700" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="417.6" y1="17" x2="520" y2="17" stroke="#FFD700" stroke-opacity="0.3" stroke-width="1"/>
+
+  <polygon points="158.4,10 165.4,17 158.4,24 151.4,17" fill="#FFD700">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
   </polygon>
-  <text x="29" y="22" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="700"
-        fill="#FFD700" letter-spacing="2.2">BACKEND &amp; LANGUAGES</text>
-  <line x1="225.4" y1="17" x2="550" y2="17" stroke="#FFD700" stroke-opacity="0.3" stroke-width="1"/>
+  <polygon points="401.6,10 408.6,17 401.6,24 394.6,17" fill="#FFD700">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <text x="280.0" y="22" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="700"
+        fill="#FFD700" text-anchor="middle" letter-spacing="2.2">BACKEND &amp; LANGUAGES</text>
 </svg>

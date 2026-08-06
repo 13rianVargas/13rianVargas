@@ -66,15 +66,30 @@ def card(uid, w, glyph, title, lines, meta, accent=None, pad_to=None):
 '''
 
 def cat(uid, w, label):
-    """A tech-stack category header: diamond + label + rule."""
-    tw = len(label) * 9.6
+    """A tech-stack category header, symmetric about the centre.
+
+    The README centres everything, so a left-aligned label with a rule running
+    only to the right reads as off-centre even though the SVG itself is centred.
+    Rules and diamonds are mirrored instead.
+    """
+    cx = w / 2
+    # Fira Code advance is 0.6em; letter-spacing adds 2.2 per gap, not after the last glyph
+    tw = len(label) * (14 * 0.6 + 2.2) - 2.2
+    dl, dr = cx - tw / 2 - 22, cx + tw / 2 + 22          # diamond centres
+    rule_gap = 38
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="34" viewBox="0 0 {w} 34">
-  <polygon points="12,10 19,17 12,24 5,17" fill="{GOLD}">
+  <line x1="40" y1="17" x2="{cx - tw/2 - rule_gap:.1f}" y2="17" stroke="{GOLD}" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="{cx + tw/2 + rule_gap:.1f}" y1="17" x2="{w-40}" y2="17" stroke="{GOLD}" stroke-opacity="0.3" stroke-width="1"/>
+
+  <polygon points="{dl:.1f},10 {dl+7:.1f},17 {dl:.1f},24 {dl-7:.1f},17" fill="{GOLD}">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
   </polygon>
-  <text x="29" y="22" font-family="{MONO}" font-size="14" font-weight="700"
-        fill="{GOLD}" letter-spacing="2.2">{esc(label)}</text>
-  <line x1="{29+tw+14}" y1="17" x2="{w-10}" y2="17" stroke="{GOLD}" stroke-opacity="0.3" stroke-width="1"/>
+  <polygon points="{dr:.1f},10 {dr+7:.1f},17 {dr:.1f},24 {dr-7:.1f},17" fill="{GOLD}">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <text x="{cx}" y="22" font-family="{MONO}" font-size="14" font-weight="700"
+        fill="{GOLD}" text-anchor="middle" letter-spacing="2.2">{esc(label)}</text>
 </svg>
 '''
 
