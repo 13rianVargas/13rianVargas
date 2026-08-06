@@ -302,8 +302,6 @@
         </p>
         <p align="center">
           <a href="https://github.com/K-Forge"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-org.svg" alt="K-Forge org" height="32"/></a>
-          &nbsp;
-          <a href="https://kforge.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
     </tr>
