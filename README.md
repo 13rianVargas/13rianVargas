@@ -77,17 +77,16 @@
           project needs the other half I move to <b>Angular and TypeScript</b>, and it doesn't feel
           like a different job.
           <br/><br/>
-          I went after the foundations around it too — networking with <b>CCNA</b>, cybersecurity
-          with <b>CCST</b>, cloud with <b>Google Cloud</b>. Not to collect certificates: knowing what
-          happens between the request leaving the browser and the row landing in the database makes
-          me better at the part I actually write.
+          Lately I've been going deep on <b>cybersecurity and cloud</b> — CCST, CCNA, Google Cloud.
+          Not to collect certificates: knowing what happens between the request leaving the browser
+          and the row landing in the database makes me better at the part I actually write.
           <br/><br/>
           I founded and lead <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software
           development club at <b>Fundación Universitaria Konrad Lorenz</b>, where I coordinate the
           technical team and set the architecture guidelines. Getting a team to agree on a design
           turned out to be its own engineering problem, and I like that part more than I expected.
           <br/><br/>
-          There is still a lot I want to learn, and honestly that is most of why I like this work.
+          I'm looking for a team where there's always something left to learn.
           <br/><br/>
           I'd rather understand 3 lines than copy-paste 30.<br/>
           <b>
@@ -119,14 +118,18 @@
     measured 8/8. FOLLOWERS uses shields' native /github/ route, which uses shields'
     own token, so it does not have this problem.
 
-    labelColor is slate, not black, and the gold value side gets dark text automatically.
+    The value side is deep gold #8A6D00, not bright #FFD700. komarev hardcodes fill="#fff"
+    for its text and exposes no parameter to change it, so white on bright gold measured a
+    1.4:1 contrast ratio — unreadable. At #8A6D00 white reaches 4.9:1 and shields picks white
+    too, so all three badges match. Bright gold only works where shields controls the text,
+    since it auto-switches to dark ink there.
   -->
   <p>
-    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=FFD700&labelColor=30363D&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
+    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=8A6D00&labelColor=30363D&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
     &nbsp;
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fungh.cc%2Fusers%2F13rianVargas%2Frepos&query=%24.repos.length&label=REPOS&style=for-the-badge&color=FFD700&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fungh.cc%2Fusers%2F13rianVargas%2Frepos&query=%24.repos.length&label=REPOS&style=for-the-badge&color=8A6D00&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
     &nbsp;
-    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=FFD700&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
+    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=8A6D00&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
   </p>
 
   <!--
