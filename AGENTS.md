@@ -126,16 +126,20 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | `github-profile-summary-cards.vercel.app` | `500` |
 | `github-contributor-stats.vercel.app` | `402` |
 | `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
-| `quotes-github-readme.vercel.app` | `200`, but renders **empty** inside an `<img>` — see below |
 
-### SVGs that only work in a browser tab, not in a README
+### Third-party SVG widgets: check the root element before trusting one
 
-`quotes-github-readme.vercel.app` builds its entire card inside a `<foreignObject>` containing HTML. Browsers refuse to render foreignObject HTML when an SVG is loaded through `<img>`, which is exactly how a README embeds it — so the card came out as an empty box. It also declares `height="auto"`, which is not a valid SVG length, so the browser invented a height and left a tall blank gap. It was replaced by the local `quote-card.svg`.
+Every layout bug on this profile came from a widget that does not declare a usable intrinsic size. An `<img>` needs one; without it the browser invents a height and the image balloons.
 
-**Two checks before trusting any third-party SVG widget:**
+| Widget | Root element | What it needs |
+|---|---|---|
+| `readme-typing-svg` | only a `viewBox`, no width/height | pass `height=` in the query **and** set `width`/`height` on the `<img>` |
+| `quotes-github-readme` `type=horizontal` | `height="auto"` — not a valid SVG length, and the card grows with the quote | **do not use**, see below |
+| `quotes-github-readme` `type=vertical` | real `width="300" height="300"` | nothing, it is stable |
 
-1. `grep -c foreignObject` — if its visible content lives in one, it will render blank in a README.
-2. Confirm the root `<svg>` carries real `width` and `height` attributes. A widget that ships only a `viewBox` (or `height="auto"`) has no intrinsic size, so the browser guesses and the image balloons vertically. `readme-typing-svg` has this problem: pass `height=` **and** set `width`/`height` on the `<img>` tag.
+**`type=horizontal` cannot be pinned.** Its card is 108px tall for a one-line quote and 149px for two, so any fixed `height` on the `<img>` leaves bare canvas under the card whenever the quote is short — a visible strip along the bottom. Making the background transparent to hide it is not a fix either: the ivory author line then disappears against GitHub's light theme. The profile uses `type=vertical`, which measured a fixed 300×300 across every sample.
+
+**A caution about diagnosing these.** An earlier pass concluded this widget rendered blank in a README, reasoning that its content sits inside a `<foreignObject>` and browsers do not render foreignObject HTML through `<img>`. That reasoning was wrong, and one render would have shown it. Render the SVG and look at it before declaring a widget broken.
 
 ### The activity graph is a known, accepted risk
 

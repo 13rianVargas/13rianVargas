@@ -72,18 +72,22 @@
           backend — <b>Java and Spring Boot</b>, mostly — building systems that still stand up once
           real people start using them.
           <br/><br/>
-          Since <b>2023</b> the habits haven't changed much: design the REST API before writing it,
-          model the database like it has to outlive me, ship it in Docker. When the frontend needs
-          me, I show up with <b>Angular and TypeScript</b>.
+          That's where most of my work lives: <b>REST APIs</b>, relational data models, services
+          split so they can fail on their own, everything containerised with <b>Docker</b>. When a
+          project needs the other half I move to <b>Angular and TypeScript</b>, and it doesn't feel
+          like a different job.
           <br/><br/>
-          The hybrid part is on purpose. Networking (<b>CCNA</b>) and cybersecurity (<b>CCST</b>)
-          sit next to cloud (<b>Google Cloud</b>) because I'd rather understand the whole path a
-          request takes than just my slice of it.
+          I went after the foundations around it too — networking with <b>CCNA</b>, cybersecurity
+          with <b>CCST</b>, cloud with <b>Google Cloud</b>. Not to collect certificates: knowing what
+          happens between the request leaving the browser and the row landing in the database makes
+          me better at the part I actually write.
           <br/><br/>
-          I founded <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software development
-          club at <b>Fundación Universitaria Konrad Lorenz</b>. I coordinate the technical team, the
-          planning and the architecture guidelines — which mostly means arguing about tradeoffs
-          until the simple option wins.
+          I founded and lead <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software
+          development club at <b>Fundación Universitaria Konrad Lorenz</b>, where I coordinate the
+          technical team and set the architecture guidelines. Getting a team to agree on a design
+          turned out to be its own engineering problem, and I like that part more than I expected.
+          <br/><br/>
+          There is still a lot I want to learn, and honestly that is most of why I like this work.
           <br/><br/>
           I'd rather understand 3 lines than copy-paste 30.<br/>
           <b>
@@ -412,11 +416,13 @@
   <h2>◈ Daily Quote</h2>
 
   <!--
-    height is pinned because this widget declares height="auto", which is not a valid SVG
-    length — without it the browser invents one and leaves a tall gap. 150 covers the
-    tallest card measured across samples (two-line quotes render at 149px).
+    type=vertical, not horizontal. The horizontal layout declares height="auto" — not a valid
+    SVG length — and its card grows with the length of the quote (measured 108px for one line,
+    149px for two). Any fixed height on the <img> therefore leaves bare canvas under the card
+    on short quotes, which is the strip that showed up at the bottom. The vertical layout
+    declares a real width="300" height="300" and stayed fixed across every sample.
   -->
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=0D1117&quoteColor=FFD700&authorColor=FFF8DC&symbolColor=FFD700&borderColor=FFD700" width="600" height="150" alt="Daily quote"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=dark&backgroundColor=0D1117&quoteColor=FFD700&authorColor=FFF8DC&symbolColor=FFD700&borderColor=FFD700" width="300" height="300" alt="Daily quote"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
