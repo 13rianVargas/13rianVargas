@@ -77,9 +77,18 @@
           project needs the other half I move to <b>Angular and TypeScript</b>, and it doesn't feel
           like a different job.
           <br/><br/>
+          <b>Architecture</b> is the part I keep coming back to. Where a boundary goes, what a
+          service is allowed to own, which tradeoff you're actually buying when you split something
+          in two — I'll spend a whole day on that and call it a good one.
+          <br/><br/>
           Lately I've been going deep on <b>cybersecurity and cloud</b> — CCST, CCNA, Google Cloud.
           Not to collect certificates: knowing what happens between the request leaving the browser
           and the row landing in the database makes me better at the part I actually write.
+          <br/><br/>
+          The curiosity doesn't stay inside the job description. <b>AMODEL</b>, further down,
+          started as a differential-equations assignment and ended up as 27,648 measurements and a
+          falsified model. I learn fastest when a problem drags me somewhere I haven't been —
+          numerical methods, network internals, whatever it turns out to need.
           <br/><br/>
           I founded and lead <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software
           development club at <b>Fundación Universitaria Konrad Lorenz</b>, where I coordinate the
@@ -90,8 +99,9 @@
           enough that one failing doesn't take the rest down with it, model the data before the
           endpoints, and leave the reasoning written down — usually for myself, months later.
           <br/><br/>
-          Open to <b>backend</b>, <b>full stack</b>, <b>DevOps</b> and <b>cybersecurity</b> roles,
-          and to any project with something new to learn.
+          Open to <b>backend</b>, <b>full stack</b>, <b>DevOps</b> and <b>cybersecurity</b> roles.
+          The constant is that I want to keep learning computer science properly — the fundamentals
+          underneath, not just the framework of the year.
         </p>
       </td>
     </tr>
