@@ -126,6 +126,48 @@ def quote(uid, w, line, attrib):
 </svg>
 '''
 
+def identity(uid, w, rows):
+    """The identity spec-sheet: label / value rows with a leading diamond."""
+    rh, top = 34, 58
+    h = top + len(rows) * rh + 18
+    body = []
+    for i, (label, value) in enumerate(rows):
+        y = top + i * rh
+        if i:
+            body.append(f'<line x1="26" y1="{y-rh+17}" x2="{w-26}" y2="{y-rh+17}" '
+                        f'stroke="{GOLD}" stroke-opacity="0.13" stroke-width="1"/>')
+        body.append(f'<polygon points="36,{y-5} 42,{y+1} 36,{y+7} 30,{y+1}" fill="{GOLD}" fill-opacity="0.85"/>')
+        body.append(f'<text x="56" y="{y+6}" font-family="{MONO}" font-size="13" font-weight="700" '
+                    f'fill="{GOLD}" letter-spacing="1.2">{esc(label)}</text>')
+        body.append(f'<text x="{w-30}" y="{y+6}" font-family="{MONO}" font-size="13" '
+                    f'fill="{IVORY}" fill-opacity="0.9" text-anchor="end">{esc(value)}</text>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+  <defs>
+    <linearGradient id="ib{uid}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{BG0}"/><stop offset="100%" stop-color="{BG1}"/>
+    </linearGradient>
+    <linearGradient id="is{uid}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{GOLD}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="{GOLD}" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="{GOLD}" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-{w} 0; {w} 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="{w-1.5}" height="{h-1.5}" rx="12" fill="url(#ib{uid})" stroke="{GOLD}" stroke-width="1.5"/>
+  <rect x="12" y="1" width="{w-24}" height="1.6" fill="url(#is{uid})"/>
+
+  <text x="30" y="34" font-family="{MONO}" font-size="12.5" font-weight="700"
+        fill="{GOLD}" fill-opacity="0.6" letter-spacing="2.4">IDENTITY</text>
+  <text x="{w-30}" y="34" font-family="{MONO}" font-size="12.5" font-weight="700"
+        fill="{GOLD}" fill-opacity="0.6" text-anchor="end" letter-spacing="2.4">ID: 000-013</text>
+  <line x1="26" y1="44" x2="{w-26}" y2="44" stroke="{GOLD}" stroke-opacity="0.25" stroke-width="1"/>
+
+  {"".join(body)}
+</svg>
+'''
+
 # ── glyphs, drawn in the same stroke language as the existing badge icons ──
 G_SHIELD = '<path d="M 0 -11 L 9 -7.5 V 1 C 9 6.5 4.8 10 0 11.5 C -4.8 10 -9 6.5 -9 1 V -7.5 Z"/><path d="M -4 0 L -1 3.5 L 4.5 -3" stroke-width="2"/>'
 G_CLOUD  = '<path d="M -9 5 A 5 5 0 0 1 -8.4 -5 A 7 7 0 0 1 5 -6 A 5.2 5.2 0 0 1 9 5 Z"/>'
@@ -182,9 +224,16 @@ for uid, name, w, glyph, title, lines, meta, accent, pad in CARDS:
     open(p, "w", encoding="utf-8").write(card(uid, w, glyph, title, lines, meta, accent, pad))
     written.append((name, os.path.getsize(p)))
 
-open(os.path.join(OUT, "quote-card.svg"), "w", encoding="utf-8").write(
-    quote("q", 760, "I'd rather understand 3 lines than copy-paste 30.", "13RIAN VARGAS"))
-written.append(("quote-card.svg", os.path.getsize(os.path.join(OUT, "quote-card.svg"))))
+open(os.path.join(OUT, "identity-card.svg"), "w", encoding="utf-8").write(
+    identity("id", 700, [
+        ("FOCUS",        "Backend · Microservices"),
+        ("EDUCATION",    "Systems Engineering · Konrad Lorenz"),
+        ("LEADERSHIP",   "Founder & Lead, K-Forge"),
+        ("LOCATION",     "Bogotá D.C., Colombia"),
+        ("AVAILABILITY", "On-site / Remote"),
+        ("LANGUAGES",    "Spanish (native) · English (B1)"),
+    ]))
+written.append(("identity-card.svg", os.path.getsize(os.path.join(OUT, "identity-card.svg"))))
 
 for label, w in CATS:
     name = "cat-" + label.split()[0].lower().replace("&", "") + ".svg"

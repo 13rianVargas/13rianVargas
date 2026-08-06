@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="280" viewBox="0 0 700 280">
+  <defs>
+    <linearGradient id="ibid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="isid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-700 0; 700 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="698.5" height="278.5" rx="12" fill="url(#ibid)" stroke="#FFD700" stroke-width="1.5"/>
+  <rect x="12" y="1" width="676" height="1.6" fill="url(#isid)"/>
+
+  <text x="30" y="34" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" font-weight="700"
+        fill="#FFD700" fill-opacity="0.6" letter-spacing="2.4">IDENTITY</text>
+  <text x="670" y="34" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" font-weight="700"
+        fill="#FFD700" fill-opacity="0.6" text-anchor="end" letter-spacing="2.4">ID: 000-013</text>
+  <line x1="26" y1="44" x2="674" y2="44" stroke="#FFD700" stroke-opacity="0.25" stroke-width="1"/>
+
+  <polygon points="36,53 42,59 36,65 30,59" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="64" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">FOCUS</text><text x="670" y="64" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">Backend · Microservices</text><line x1="26" y1="75" x2="674" y2="75" stroke="#FFD700" stroke-opacity="0.13" stroke-width="1"/><polygon points="36,87 42,93 36,99 30,93" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="98" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">EDUCATION</text><text x="670" y="98" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">Systems Engineering · Konrad Lorenz</text><line x1="26" y1="109" x2="674" y2="109" stroke="#FFD700" stroke-opacity="0.13" stroke-width="1"/><polygon points="36,121 42,127 36,133 30,127" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="132" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">LEADERSHIP</text><text x="670" y="132" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">Founder &amp; Lead, K-Forge</text><line x1="26" y1="143" x2="674" y2="143" stroke="#FFD700" stroke-opacity="0.13" stroke-width="1"/><polygon points="36,155 42,161 36,167 30,161" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="166" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">LOCATION</text><text x="670" y="166" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">Bogotá D.C., Colombia</text><line x1="26" y1="177" x2="674" y2="177" stroke="#FFD700" stroke-opacity="0.13" stroke-width="1"/><polygon points="36,189 42,195 36,201 30,195" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="200" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">AVAILABILITY</text><text x="670" y="200" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">On-site / Remote</text><line x1="26" y1="211" x2="674" y2="211" stroke="#FFD700" stroke-opacity="0.13" stroke-width="1"/><polygon points="36,223 42,229 36,235 30,229" fill="#FFD700" fill-opacity="0.85"/><text x="56" y="234" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFD700" letter-spacing="1.2">LANGUAGES</text><text x="670" y="234" font-family="'Fira Code', 'Courier New', monospace" font-size="13" fill="#FFF8DC" fill-opacity="0.9" text-anchor="end">Spanish (native) · English (B1)</text>
+</svg>

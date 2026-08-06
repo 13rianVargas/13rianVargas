@@ -68,17 +68,22 @@
         <p align="left">
           <b>¡Hello World! Here's 13rian.</b>
           <br/><br/>
-          I'm a software developer with <b>3+ years</b> building applications, focused on <b>Java and Spring Boot</b>
-          on the backend and full stack capable with <b>Angular and TypeScript</b>. I design REST APIs, model
-          relational databases and deploy with Docker.
+          I got hooked on figuring out how things work underneath. That's how I ended up in the
+          backend — <b>Java and Spring Boot</b>, mostly — building systems that still stand up once
+          real people start using them.
           <br/><br/>
-          My profile is hybrid: I bring networking (<b>CCNA</b>) and cybersecurity (<b>CCST</b>) foundations
-          alongside cloud (<b>Google Cloud</b>). I got hooked on figuring out how things work underneath — which
-          is how I ended up in backend, building systems that still stand up when real people use them.
+          Since <b>2023</b> the habits haven't changed much: design the REST API before writing it,
+          model the database like it has to outlive me, ship it in Docker. When the frontend needs
+          me, I show up with <b>Angular and TypeScript</b>.
           <br/><br/>
-          I founded <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software development club at
-          <b>Fundación Universitaria Konrad Lorenz</b>, where I coordinate the technical team, the planning and
-          the architecture guidelines.
+          The hybrid part is on purpose. Networking (<b>CCNA</b>) and cybersecurity (<b>CCST</b>)
+          sit next to cloud (<b>Google Cloud</b>) because I'd rather understand the whole path a
+          request takes than just my slice of it.
+          <br/><br/>
+          I founded <a href="https://kforge.vercel.app"><b>K-Forge</b></a>, the software development
+          club at <b>Fundación Universitaria Konrad Lorenz</b>. I coordinate the technical team, the
+          planning and the architecture guidelines — which mostly means arguing about tradeoffs
+          until the simple option wins.
           <br/><br/>
           I'd rather understand 3 lines than copy-paste 30.<br/>
           <b>
@@ -94,32 +99,7 @@
 
   <br/>
 
-  <table>
-    <tr>
-      <td><b>◈ Focus</b></td>
-      <td>Backend · Microservices</td>
-    </tr>
-    <tr>
-      <td><b>◈ Education</b></td>
-      <td>Systems Engineering · Konrad Lorenz</td>
-    </tr>
-    <tr>
-      <td><b>◈ Leadership</b></td>
-      <td>Founder &amp; Lead, K-Forge</td>
-    </tr>
-    <tr>
-      <td><b>◈ Location</b></td>
-      <td>Bogotá D.C., Colombia</td>
-    </tr>
-    <tr>
-      <td><b>◈ Availability</b></td>
-      <td>On-site / Remote</td>
-    </tr>
-    <tr>
-      <td><b>◈ Languages</b></td>
-      <td>Spanish (native) · English (B1)</td>
-    </tr>
-  </table>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/identity-card.svg" width="700" height="280" alt="Focus: backend and microservices · Education: Systems Engineering at Konrad Lorenz · Leadership: founder and lead of K-Forge · Location: Bogotá D.C., Colombia · Availability: on-site or remote · Languages: Spanish native, English B1"/>
 
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
@@ -127,12 +107,22 @@
 
   <h2>◈ GitHub Stats</h2>
 
+  <!--
+    REPOS reads from ungh.cc, not api.github.com. shields' dynamic/json fetches the
+    source server-side and unauthenticated; against api.github.com it shares shields'
+    IPs, which sit permanently at GitHub's 60 req/h anonymous cap — the badge rendered
+    "invalid" 5 times out of 8 when measured. ungh.cc is a cached GitHub API mirror and
+    measured 8/8. FOLLOWERS uses shields' native /github/ route, which uses shields'
+    own token, so it does not have this problem.
+
+    labelColor is slate, not black, and the gold value side gets dark text automatically.
+  -->
   <p>
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2F13rianVargas&query=%24.public_repos&label=REPOS&style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
+    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=FFD700&labelColor=30363D&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
     &nbsp;
-    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fungh.cc%2Fusers%2F13rianVargas%2Frepos&query=%24.repos.length&label=REPOS&style=for-the-badge&color=FFD700&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Public repos"/>
     &nbsp;
-    <img src="https://komarev.com/ghpvc/?username=13rianVargas&label=PROFILE+VIEWS&color=FFD700&labelColor=0D1117&style=for-the-badge&abbreviated=true" height="44" alt="Profile views"/>
+    <img src="https://img.shields.io/github/followers/13rianVargas?label=FOLLOWERS&style=for-the-badge&color=FFD700&labelColor=30363D&logo=github&logoColor=FFD700" height="44" alt="Followers"/>
   </p>
 
   <!--
@@ -419,15 +409,14 @@
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ QUOTE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
-  <h2>◈ Philosophy</h2>
+  <h2>◈ Daily Quote</h2>
 
   <!--
-    A local card, not quotes-github-readme. That service builds its whole card inside a
-    <foreignObject>; browsers do not render foreignObject HTML when an SVG is loaded via
-    <img>, so it showed up as an empty box — and its invalid height="auto" made the browser
-    invent a tall one, which was most of the dead space in this section.
+    height is pinned because this widget declares height="auto", which is not a valid SVG
+    length — without it the browser invents one and leaves a tall gap. 150 covers the
+    tallest card measured across samples (two-line quotes render at 149px).
   -->
-  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/quote-card.svg" width="760" height="118" alt="I'd rather understand 3 lines than copy-paste 30. — 13rian Vargas"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=0D1117&quoteColor=FFD700&authorColor=FFF8DC&symbolColor=FFD700&borderColor=FFD700" width="600" height="150" alt="Daily quote"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
