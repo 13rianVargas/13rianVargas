@@ -55,8 +55,6 @@
     </a>
   </p>
 
-<br/><br/>
-
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ABOUT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -122,8 +120,6 @@
     </tr>
   </table>
 
-  <br/>
-
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ GITHUB STATS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -158,8 +154,6 @@
     <img width="467" src="https://github-readme-stats-nu-gilt-20.vercel.app/api/top-langs/?username=13rianVargas&layout=compact&card_width=467&hide_border=true&bg_color=0D1117&title_color=FFD700&text_color=FFF8DC" alt="Top Languages"/>
   </a>
 
-<br/><br/>
-
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ CONTRIBUTION ACTIVITY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -180,8 +174,6 @@
   <a href="https://github.com/13rianVargas">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=13rianVargas&bg_color=0D1117&color=FFD700&line=FFD700&point=FFF8DC&area=true&area_color=FFD700&hide_border=true&custom_title=Daily%20commits" alt="Activity Graph — daily commits" width="100%"/>
   </a>
-
-<br/><br/>
 
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
@@ -308,15 +300,13 @@
           and the architecture guidelines.
         </p>
         <p align="center">
-          <a href="https://github.com/K-Forge"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge.svg" alt="K-Forge org" height="32"/></a>
+          <a href="https://github.com/K-Forge"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-kforge-org.svg" alt="K-Forge org" height="32"/></a>
           &nbsp;
           <a href="https://kforge.vercel.app"><img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/badge-live.svg" alt="Live" height="32"/></a>
         </p>
       </td>
     </tr>
   </table>
-
-  <br/>
 
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
@@ -326,7 +316,7 @@
 
   <p><sub><i>What I actually work with day to day — not a list of everything I have ever opened.</i></sub></p>
 
-  <h3>◈ Frontend</h3>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cat-frontend.svg" height="34" alt="Frontend"/>
   <p>
     <img src="https://img.shields.io/badge/HTML5-0D1117?style=for-the-badge&logo=html5&logoColor=E34F26" height="36" alt="HTML5"/>
     <img src="https://img.shields.io/badge/CSS3-0D1117?style=for-the-badge&logo=css&logoColor=1572B6" height="36" alt="CSS3"/>
@@ -337,7 +327,7 @@
     <img src="https://img.shields.io/badge/Tailwind_CSS-0D1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" height="36" alt="Tailwind CSS"/>
   </p>
 
-  <h3>◈ Backend &amp; Languages</h3>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cat-backend.svg" height="34" alt="Backend & Languages"/>
   <p>
     <img src="https://img.shields.io/badge/Java-0D1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00" height="36" alt="Java"/>
     <img src="https://img.shields.io/badge/Spring_Boot-0D1117?style=for-the-badge&logo=springboot&logoColor=6DB33F" height="36" alt="Spring Boot"/>
@@ -347,7 +337,7 @@
     <img src="https://img.shields.io/badge/REST_API_Design-0D1117?style=for-the-badge&logo=openapiinitiative&logoColor=6BA539" height="36" alt="REST API Design"/>
   </p>
 
-  <h3>◈ Databases</h3>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cat-databases.svg" height="34" alt="Databases"/>
   <p>
     <img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=for-the-badge&logo=postgresql&logoColor=4169E1" height="36" alt="PostgreSQL"/>
     <img src="https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1" height="36" alt="MySQL"/>
@@ -357,7 +347,7 @@
     <img src="https://img.shields.io/badge/PL%2FSQL-0D1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgZmlsbD0iI0Y4MDAwMCI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjkiIHJ5PSIzLjIiLz48cGF0aCBkPSJNMyA4LjJ2My40YzAgMS43NyA0LjAzIDMuMiA5IDMuMnM5LTEuNDMgOS0zLjJWOC4yYzAgMS43Ny00LjAzIDMuMi05IDMuMlMzIDkuOTcgMyA4LjJ6Ii8+PHBhdGggZD0iTTMgMTQuNlYxOGMwIDEuNzcgNC4wMyAzLjIgOSAzLjJzOS0xLjQzIDktMy4ydi0zLjRjMCAxLjc3LTQuMDMgMy4yLTkgMy4ycy05LTEuNDMtOS0zLjJ6Ii8+PC9nPjwvc3ZnPgo=" height="36" alt="PL/SQL"/>
   </p>
 
-  <h3>◈ Tools &amp; DevOps</h3>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cat-tools.svg" height="34" alt="Tools & DevOps"/>
   <p>
     <img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032" height="36" alt="Git"/>
     <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF" height="36" alt="GitHub"/>
@@ -373,8 +363,6 @@
     <img src="https://img.shields.io/badge/Postman-0D1117?style=for-the-badge&logo=postman&logoColor=FF6C37" height="36" alt="Postman"/>
   </p>
 
-  <br/>
-
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ CREDENTIALS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -383,74 +371,34 @@
 
   <p><sub><i>Everything here is backed by a certificate or a digital badge.</i></sub></p>
 
-  <br/>
-
-  <!-- Headline credential, given the weight it earned -->
-  <img src="https://img.shields.io/badge/CCST_CYBERSECURITY-974%20%2F%201000-FFD700?style=for-the-badge&logo=cisco&logoColor=0D1117&labelColor=0D1117" height="46" alt="CCST Cybersecurity — 974 of 1000"/>
-
-  <p>
-    <sub><i>Official proctored 100-160 exam (Certiport), 05/2026 — <b>700</b> is the minimum to pass.<br/>
-    <b>100%</b> in network security, vulnerability assessment and incident handling.</i></sub>
-  </p>
-
-  <br/>
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cred-ccst.svg" width="760" alt="CCST Cybersecurity — 974/1000, official proctored 100-160 exam, Cisco Systems 05/2026"/>
 
   <table>
     <tr>
-      <td width="33%" align="center" valign="top">
-        <img src="https://img.shields.io/badge/Cisco_Networking_Academy-0D1117?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="34" alt="Cisco Networking Academy"/>
-        <p align="center">
-          Ethical Hacker · CCNA Switching, Routing &amp; Wireless Essentials ·<br/>
-          Intro to Cybersecurity · NDG Linux Unhatched
-        </p>
-        <p align="center"><sub><b>4 badges · 5 certificates</b><br/>09/2024 — 05/2026</sub></p>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cred-cisco.svg" width="370" alt="Cisco Academy — Ethical Hacker, CCNA SRWE, Intro to Cybersecurity, NDG Linux Unhatched. 4 badges, 5 certificates, 2024-2026"/>
       </td>
-      <td width="33%" align="center" valign="top">
-        <img src="https://img.shields.io/badge/Google_Cloud-0D1117?style=for-the-badge&logo=googlecloud&logoColor=4285F4" height="34" alt="Google Cloud"/>
-        <p align="center">
-          Generative AI · Data &amp; Analytics ·<br/>
-          Infrastructure &amp; Operations
-        </p>
-        <p align="center"><sub><b>16 courses and digital badges</b><br/>02/2026 — 05/2026</sub></p>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cred-gcloud.svg" width="370" alt="Google Cloud — Generative AI, Data and Analytics, Infrastructure and Operations. 16 courses and badges, 2026"/>
       </td>
-      <td width="33%" align="center" valign="top">
-        <img src="https://img.shields.io/badge/Platzi-0D1117?style=for-the-badge&logo=platzi&logoColor=98CA3F" height="34" alt="Platzi"/>
-        <p align="center">
-          Java &amp; Spring —<br/>
-          the backend track
-        </p>
-        <p align="center"><sub><b>2 certificates · 32 hours</b><br/>02/2026</sub></p>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/cred-platzi.svg" width="370" alt="Platzi — Java and Spring backend track. 2 certificates, 32 hours, 02/2026"/>
       </td>
     </tr>
   </table>
-
-  <br/>
 
   <h2>◈ Awards</h2>
 
   <table>
     <tr>
-      <td width="50%" align="center" valign="top">
-        <img src="https://img.shields.io/badge/Cisco_Cyber_Challenge-0D1117?style=for-the-badge&logo=cisco&logoColor=1BA0D7" height="34" alt="Cisco Cyber Challenge"/>
-        <p align="center">
-          Won the voucher that paid for the CCST exam above —<br/>
-          which I then passed with 974/1000.
-        </p>
-        <p align="center"><sub>Cisco Systems · Bogotá D.C. · <b>04/2026</b></sub></p>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/award-cisco.svg" width="430" alt="Cisco Cyber Challenge — won the voucher that paid for the CCST exam. Cisco Systems, Bogotá D.C., 04/2026"/>
       </td>
-      <td width="50%" align="center" valign="top">
-        <img src="https://img.shields.io/badge/National_Programming_Marathon-0D1117?style=for-the-badge&logo=codeforces&logoColor=FFD700" height="34" alt="National Programming Marathon"/>
-        <p align="center">
-          University representative against ~120 teams,<br/>
-          qualifier for the Latin American Regional.<br/>
-          Solved in Java, Python and C++.
-        </p>
-        <p align="center"><sub>Konrad Lorenz · <b>2024</b></sub></p>
+      <td align="center" valign="top">
+        <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/award-marathon.svg" width="430" alt="National Programming Marathon — university representative against ~120 teams, Latin American Regional qualifier. Konrad Lorenz, 2024"/>
       </td>
     </tr>
   </table>
-
-  <br/>
 
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/divider.svg" width="100%" alt="divider"/>
 

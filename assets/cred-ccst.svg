@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="159" viewBox="0 0 760 159">
+  <defs>
+    <linearGradient id="bgccst" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="shccst" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-760 0; 760 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="758.5" height="157.5" rx="12" fill="url(#bgccst)" stroke="#FFD700" stroke-width="1.5"/>
+  <rect x="12" y="1" width="736" height="1.6" fill="url(#shccst)"/>
+
+  <g transform="translate(28, 33)" stroke="#FFD700" fill="none" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round"><path d="M 0 -11 L 9 -7.5 V 1 C 9 6.5 4.8 10 0 11.5 C -4.8 10 -9 6.5 -9 1 V -7.5 Z"/><path d="M -4 0 L -1 3.5 L 4.5 -3" stroke-width="2"/></g>
+
+  <text x="52" y="38" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="700"
+        fill="#FFD700" letter-spacing="0.6">CCST CYBERSECURITY</text>
+  <rect x="634.0" y="19" width="104.0" height="24" rx="6" fill="#FFD700"/><text x="686.0" y="35.5" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="700" fill="#0D1117" text-anchor="middle" letter-spacing="0.5">974 / 1000</text>
+  <text x="26" y="88" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">Official proctored 100-160 exam (Certiport). 700 is the minimum to pass.</text><text x="26" y="107" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">100% in network security, vulnerability assessment and incident handling.</text>
+
+  <line x1="26" y1="125" x2="734" y2="125" stroke="#FFD700" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="26" y="144" font-family="'Fira Code', 'Courier New', monospace" font-size="11.5" font-weight="700"
+        fill="#FFD700" fill-opacity="0.75" letter-spacing="1">CISCO SYSTEMS  ·  05/2026</text>
+</svg>

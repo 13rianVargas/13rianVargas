@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="370" height="197" viewBox="0 0 370 197">
+  <defs>
+    <linearGradient id="bggcp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="shgcp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-370 0; 370 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="368.5" height="195.5" rx="12" fill="url(#bggcp)" stroke="#FFD700" stroke-width="1.5"/>
+  <rect x="12" y="1" width="346" height="1.6" fill="url(#shgcp)"/>
+
+  <g transform="translate(28, 33)" stroke="#FFD700" fill="none" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round"><path d="M -9 5 A 5 5 0 0 1 -8.4 -5 A 7 7 0 0 1 5 -6 A 5.2 5.2 0 0 1 9 5 Z"/></g>
+
+  <text x="52" y="38" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="700"
+        fill="#FFD700" letter-spacing="0.6">GOOGLE CLOUD</text>
+  
+  <text x="26" y="88" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">Generative AI ·</text><text x="26" y="107" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">Data &amp; Analytics ·</text><text x="26" y="126" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">Infrastructure &amp; Operations</text>
+
+  <line x1="26" y1="163" x2="344" y2="163" stroke="#FFD700" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="26" y="182" font-family="'Fira Code', 'Courier New', monospace" font-size="11.5" font-weight="700"
+        fill="#FFD700" fill-opacity="0.75" letter-spacing="1">16 COURSES &amp; BADGES  ·  2026</text>
+</svg>

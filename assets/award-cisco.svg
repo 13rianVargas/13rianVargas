@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="178" viewBox="0 0 430 178">
+  <defs>
+    <linearGradient id="bgawcisco" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/><stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="shawcisco" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-430 0; 430 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="428.5" height="176.5" rx="12" fill="url(#bgawcisco)" stroke="#FFD700" stroke-width="1.5"/>
+  <rect x="12" y="1" width="406" height="1.6" fill="url(#shawcisco)"/>
+
+  <g transform="translate(28, 33)" stroke="#FFD700" fill="none" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="4" r="6.5"/><path d="M -5.5 -1.5 L -8 -11 H 8 L 5.5 -1.5"/><path d="M -2 4 L -0.4 6 L 2.6 2" stroke-width="1.9"/></g>
+
+  <text x="52" y="38" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="700"
+        fill="#FFD700" letter-spacing="0.6">CISCO CYBER CHALLENGE</text>
+  
+  <text x="26" y="88" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">Won the voucher that paid for the CCST</text><text x="26" y="107" font-family="'Fira Code', 'Courier New', monospace" font-size="12.5" fill="#FFF8DC" fill-opacity="0.88">exam — which I then passed at 974/1000.</text>
+
+  <line x1="26" y1="144" x2="404" y2="144" stroke="#FFD700" stroke-opacity="0.22" stroke-width="1"/>
+  <text x="26" y="163" font-family="'Fira Code', 'Courier New', monospace" font-size="11.5" font-weight="700"
+        fill="#FFD700" fill-opacity="0.75" letter-spacing="1">CISCO SYSTEMS · BOGOTÁ D.C.  ·  04/2026</text>
+</svg>

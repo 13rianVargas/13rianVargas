@@ -19,6 +19,8 @@ The README presents Brian's identity as a **Java Backend Developer | Full Stack*
 ```text
 13rianVargas/
 ├── README.md                   # GitHub profile README (rendered at github.com/13rianVargas)
+├── tools/
+│   └── gen_cards.py            # generates the cred-*, award-* and cat-* SVGs below
 └── assets/
     ├── header-banner.svg       # 1200x400 · animated hero (deer mark, name, role, ID-card frame)
     ├── divider.svg             # 1200x6   · animated gold shimmer divider (between sections)
@@ -34,7 +36,29 @@ The README presents Brian's identity as a **Java Backend Developer | Full Stack*
     ├── badge-live.svg          # 110x32   · project live pill
     ├── badge-wip.svg           # 100x32   · project WIP pill
     ├── badge-prototype.svg     # 130x32   · project prototype pill (demo, not production)
-    └── badge-video-soon.svg    # 152x32   · project pill for a demo video not yet published
+    ├── badge-video-soon.svg    # 152x32   · project pill for a demo video not yet published
+    ├── badge-kforge-org.svg    # 128x32   · K-Forge pill sized for a project cell
+    ├── cred-ccst.svg           # 760x159  · headline credential card
+    ├── cred-cisco.svg          # 370x197  · credential card ┐
+    ├── cred-gcloud.svg         # 370x197  · credential card ├ one table row, equal heights
+    ├── cred-platzi.svg         # 370x197  · credential card ┘
+    ├── award-cisco.svg         # 430x178  · award card ┐ one table row, equal heights
+    ├── award-marathon.svg      # 430x178  · award card ┘
+    ├── cat-frontend.svg        # 560x34   · tech-stack category header ┐
+    ├── cat-backend.svg         # 560x34   · tech-stack category header ├ generated, see below
+    ├── cat-databases.svg       # 560x34   · tech-stack category header │
+    └── cat-tools.svg           # 560x34   · tech-stack category header ┘
+
+### Cards and category headers are generated, not hand-edited
+
+`cred-*.svg`, `award-*.svg` and `cat-*.svg` all come from `tools/gen_cards.py`. Edit the generator and re-run it (`python3 tools/gen_cards.py`) rather than patching the SVGs directly, or they will drift apart.
+
+Two rules baked into the template, learned by breaking them first:
+
+- **Card height is derived from the line count** (`140 + (n-1)*19`). Hardcoding it made the footer divider cut straight through the body text on the cards with the most lines.
+- **Cards that share a table row take a `pad_to` line count** so they render at identical heights. Without it a 3-line card next to a 4-line card leaves the row visibly ragged.
+
+SVG `<text>` does not wrap — body copy is passed in as an explicit list of lines.
 ```
 
 ---
