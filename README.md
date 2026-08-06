@@ -11,13 +11,14 @@
 
   <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/header-banner.svg" width="100%" alt="Brian Vargas — Java Backend Developer · Full Stack · K-Forge Founder" />
 
-<br/><br/>
-
+  <!--
+    height=60 pins the service's viewBox, and width/height on the <img> give the
+    browser an intrinsic size. Without them this SVG ships only a viewBox, so the
+    browser invents a height and the strip renders several hundred pixels tall.
+  -->
   <a href="https://13rian-vargas.vercel.app">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=900&color=FFD700&background=0D1117&center=true&vCenter=true&width=900&lines=Java+Backend+Developer;Spring+Boot+Microservices;Full+Stack+with+Angular;CCST+Cybersecurity+%E2%9A%A1;Concepts+%3E+Code" alt="Roles" />
+    <img width="900" height="60" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=900&color=FFD700&background=0D1117&center=true&vCenter=true&width=900&height=60&lines=Java+Backend+Developer;Spring+Boot+Microservices;Full+Stack+with+Angular;CCST+Cybersecurity+%E2%9A%A1;Concepts+%3E+Code" alt="Roles" />
   </a>
-
-<br/><br/>
 
   <p>
     <a href="https://www.konradlorenz.edu.co/">
@@ -420,11 +421,15 @@
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ QUOTE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
-  <h2>◈ Daily Quote</h2>
+  <h2>◈ Philosophy</h2>
 
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&backgroundColor=0D1117&quoteColor=FFD700&authorColor=FFF8DC&symbolColor=FFD700&borderColor=FFD700" alt="Quote"/>
-
-<br/><br/>
+  <!--
+    A local card, not quotes-github-readme. That service builds its whole card inside a
+    <foreignObject>; browsers do not render foreignObject HTML when an SVG is loaded via
+    <img>, so it showed up as an empty box — and its invalid height="auto" made the browser
+    invent a tall one, which was most of the dead space in this section.
+  -->
+  <img src="https://raw.githubusercontent.com/13rianVargas/13rianVargas/main/assets/quote-card.svg" width="760" height="118" alt="I'd rather understand 3 lines than copy-paste 30. — 13rian Vargas"/>
 
   <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 

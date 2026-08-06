@@ -93,6 +93,39 @@ def cat(uid, w, label):
 </svg>
 '''
 
+def quote(uid, w, line, attrib):
+    """A pull-quote card.
+
+    Replaces quotes-github-readme, which builds its whole card inside a
+    <foreignObject>. Browsers do not render foreignObject HTML when an SVG is
+    loaded through <img>, so that widget renders as an empty box in a README —
+    and its invalid height="auto" makes the browser invent a tall one.
+    """
+    h = 118
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+  <defs>
+    <linearGradient id="qb{uid}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{BG0}"/><stop offset="100%" stop-color="{BG1}"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="{w-1.5}" height="{h-1.5}" rx="12" fill="url(#qb{uid})" stroke="{GOLD}" stroke-width="1.5"/>
+
+  <text x="34" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="64"
+        fill="{GOLD}" fill-opacity="0.35">&#8220;</text>
+  <text x="{w-34}" y="{h-14}" font-family="Georgia, 'Times New Roman', serif" font-size="64"
+        fill="{GOLD}" fill-opacity="0.35" text-anchor="end">&#8221;</text>
+
+  <text x="{w/2}" y="60" font-family="{MONO}" font-size="17" font-weight="700"
+        fill="{GOLD}" text-anchor="middle" letter-spacing="0.4">{esc(line)}</text>
+
+  <line x1="{w/2-90}" y1="80" x2="{w/2+90}" y2="80" stroke="{GOLD}" stroke-opacity="0.25" stroke-width="1"/>
+
+  <text x="{w/2}" y="102" font-family="{MONO}" font-size="12" font-weight="700"
+        fill="{IVORY}" fill-opacity="0.6" text-anchor="middle" letter-spacing="2">{esc(attrib)}</text>
+</svg>
+'''
+
 # ── glyphs, drawn in the same stroke language as the existing badge icons ──
 G_SHIELD = '<path d="M 0 -11 L 9 -7.5 V 1 C 9 6.5 4.8 10 0 11.5 C -4.8 10 -9 6.5 -9 1 V -7.5 Z"/><path d="M -4 0 L -1 3.5 L 4.5 -3" stroke-width="2"/>'
 G_CLOUD  = '<path d="M -9 5 A 5 5 0 0 1 -8.4 -5 A 7 7 0 0 1 5 -6 A 5.2 5.2 0 0 1 9 5 Z"/>'
@@ -148,6 +181,10 @@ for uid, name, w, glyph, title, lines, meta, accent, pad in CARDS:
     p = os.path.join(OUT, name)
     open(p, "w", encoding="utf-8").write(card(uid, w, glyph, title, lines, meta, accent, pad))
     written.append((name, os.path.getsize(p)))
+
+open(os.path.join(OUT, "quote-card.svg"), "w", encoding="utf-8").write(
+    quote("q", 760, "I'd rather understand 3 lines than copy-paste 30.", "13RIAN VARGAS"))
+written.append(("quote-card.svg", os.path.getsize(os.path.join(OUT, "quote-card.svg"))))
 
 for label, w in CATS:
     name = "cat-" + label.split()[0].lower().replace("&", "") + ".svg"

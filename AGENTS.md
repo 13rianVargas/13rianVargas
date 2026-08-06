@@ -111,7 +111,6 @@ When editing SVGs:
 |---------|---------|
 | `readme-typing-svg.demolab.com` | Animated typing roles |
 | `github-readme-activity-graph.vercel.app` | Contribution wave graph — **kept by explicit preference**, see the caveat below |
-| `quotes-github-readme.vercel.app` | Random daily quote |
 | `komarev.com` | Profile visitor counter |
 | `img.shields.io` | Custom badges + `dynamic/json` stat strip off `api.github.com` |
 | `raw.githubusercontent.com` | Custom SVG assets in `assets/` |
@@ -127,6 +126,16 @@ Free hobby instances of the popular readme widgets are being shut down. Probed a
 | `github-profile-summary-cards.vercel.app` | `500` |
 | `github-contributor-stats.vercel.app` | `402` |
 | `github-readme-stats.hackclub.dev` | `200`, but body renders `Something went wrong` |
+| `quotes-github-readme.vercel.app` | `200`, but renders **empty** inside an `<img>` — see below |
+
+### SVGs that only work in a browser tab, not in a README
+
+`quotes-github-readme.vercel.app` builds its entire card inside a `<foreignObject>` containing HTML. Browsers refuse to render foreignObject HTML when an SVG is loaded through `<img>`, which is exactly how a README embeds it — so the card came out as an empty box. It also declares `height="auto"`, which is not a valid SVG length, so the browser invented a height and left a tall blank gap. It was replaced by the local `quote-card.svg`.
+
+**Two checks before trusting any third-party SVG widget:**
+
+1. `grep -c foreignObject` — if its visible content lives in one, it will render blank in a README.
+2. Confirm the root `<svg>` carries real `width` and `height` attributes. A widget that ships only a `viewBox` (or `height="auto"`) has no intrinsic size, so the browser guesses and the image balloons vertically. `readme-typing-svg` has this problem: pass `height=` **and** set `width`/`height` on the `<img>` tag.
 
 ### The activity graph is a known, accepted risk
 
