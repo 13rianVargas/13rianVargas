@@ -86,15 +86,12 @@
           technical team and set the architecture guidelines. Getting a team to agree on a design
           turned out to be its own engineering problem, and I like that part more than I expected.
           <br/><br/>
-          I'm looking for a team where there's always something left to learn.
+          <b>How I work:</b> settle the API contract before the implementation, keep services small
+          enough that one failing doesn't take the rest down with it, model the data before the
+          endpoints, and leave the reasoning written down — usually for myself, months later.
           <br/><br/>
-          I'd rather understand 3 lines than copy-paste 30.<br/>
-          <b>
-          <br/>
-          -&gt; Concepts before code + Architecture before frameworks + Team over individual &lt;-
-          </b>
-          <br/><br/>
-          Let's build something good together. 💛
+          Open to <b>backend</b>, <b>full stack</b>, <b>DevOps</b> and <b>cybersecurity</b> roles,
+          and to any project with something new to learn.
         </p>
       </td>
     </tr>
